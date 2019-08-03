@@ -9,9 +9,13 @@ from django.shortcuts import render_to_response
 counter_show = Counter()
 counter_click = Counter()
 
+show_list = []
+click_list = []
 
 def index(request):
     # Реализуйте логику подсчета количества переходов с лендига по GET параметру from-landing
+    from_landing = request.GET.get('from-landing')
+    click_list.append(from_landing)
     return render_to_response('index.html')
 
 
@@ -20,7 +24,13 @@ def landing(request):
     # в зависимости от GET параметра ab-test-arg
     # который может принимать значения original и test
     # Так же реализуйте логику подсчета количества показов
-    return render_to_response('landing.html')
+
+    ab_test_arg = request.GET.get('ab-test-arg')
+    show_list.append(ab_test_arg)
+    if ab_test_arg == 'original':
+        return render_to_response('landing.html')
+    if ab_test_arg == 'test':
+        return render_to_response('landing_alternate.html')
 
 
 def stats(request):
@@ -28,7 +38,15 @@ def stats(request):
     # Чтобы отличить с какой версии лендинга был переход
     # проверяйте GET параметр marker который может принимать значения test и original
     # Для вывода результат передайте в следующем формате:
+
+    counter_show = Counter(show_list)
+    counter_click = Counter(click_list)
+    test_conversation = counter_click['test'] / counter_show['test']
+    original_conversion = counter_click['original'] / counter_show['original']
+
+    print(f' Test: {test_conversation} \n Original: {original_conversion}')
+
     return render_to_response('stats.html', context={
-        'test_conversion': 0.5,
-        'original_conversion': 0.4,
+        'test_conversion': test_conversation,
+        'original_conversion': original_conversion,
     })
