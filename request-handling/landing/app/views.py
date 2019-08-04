@@ -9,13 +9,17 @@ from django.shortcuts import render_to_response
 counter_show = Counter()
 counter_click = Counter()
 
-show_list = []
-click_list = []
 
 def index(request):
     # Реализуйте логику подсчета количества переходов с лендига по GET параметру from-landing
     from_landing = request.GET.get('from-landing')
-    click_list.append(from_landing)
+
+    if from_landing == 'original':
+        counter_click['original'] += 1
+        print('click:', counter_click)
+    if from_landing == 'test':
+        counter_click['test'] += 1
+        print('click:', counter_click)
     return render_to_response('index.html')
 
 
@@ -26,10 +30,13 @@ def landing(request):
     # Так же реализуйте логику подсчета количества показов
 
     ab_test_arg = request.GET.get('ab-test-arg')
-    show_list.append(ab_test_arg)
     if ab_test_arg == 'original':
+        counter_show['original'] += 1
+        print('show:', counter_show)
         return render_to_response('landing.html')
     if ab_test_arg == 'test':
+        counter_show['test'] += 1
+        print('show:', counter_show)
         return render_to_response('landing_alternate.html')
 
 
@@ -39,10 +46,15 @@ def stats(request):
     # проверяйте GET параметр marker который может принимать значения test и original
     # Для вывода результат передайте в следующем формате:
 
-    counter_show = Counter(show_list)
-    counter_click = Counter(click_list)
-    test_conversation = counter_click['test'] / counter_show['test']
-    original_conversion = counter_click['original'] / counter_show['original']
+    try:
+        test_conversation = counter_click['test'] / counter_show['test']
+    except ZeroDivisionError:
+        test_conversation = 0.0
+
+    try:
+        original_conversion = counter_click['original'] / counter_show['original']
+    except ZeroDivisionError:
+        original_conversion = 0.0
 
     print(f' Test: {test_conversation} \n Original: {original_conversion}')
 

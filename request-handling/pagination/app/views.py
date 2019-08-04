@@ -1,42 +1,50 @@
 from django.shortcuts import render_to_response, redirect
 from django.urls import reverse
 
+from django.core.paginator import Paginator
 from app.settings import BUS_STATION_CSV
 import csv
 
 import urllib.parse
 
 bus_stations_data = []
-prev_page = '?' + urllib.parse.urlencode({'page': 1})
-next_page = '?' + urllib.parse.urlencode({'page': 2})
+objects_to_page = 10
 
 def index(request):
-    with open(BUS_STATION_CSV, encoding='cp1251', newline='') as csvfile:
-        reader = csv.DictReader(csvfile)
+    with open(BUS_STATION_CSV, encoding='cp1251', newline='') as file_csv:
+        reader = csv.DictReader(file_csv)
         for row in reader:
             bus_stations_data.append({'Name': row['Name'], 'Street': row['Street'], 'District': row['District']})
     return redirect(reverse(bus_stations))
 
 
 def bus_stations(request):
-    bus_stations_show = []
-    stations_quant = len(bus_stations_data)
     page_number = request.GET.get('page')
 
-    if(page_number == '1') or (page_number == None):
-        station_start = 0
-        station_end = round(stations_quant / 2)
-    if(page_number == '2'):
-        station_start = round(stations_quant / 2)
-        station_end = stations_quant
+    paginator = Paginator(bus_stations_data, objects_to_page)
+    page_object = paginator.get_page(page_number)
 
-    for item_num in range(station_start, station_end):
-        bus_stations_show.append(bus_stations_data[item_num])
+    print('count objects:', paginator.count)
+    print('pages:', paginator.num_pages)
+    print('current page:', page_object)
+
+    bus_stations_show = paginator.page(page_object.number).object_list
+    print('page objects to show:', bus_stations_show)
+
+    if(page_object.has_next()):
+        next_page = '?' + urllib.parse.urlencode({'page':page_object.next_page_number()})
+    else:
+        next_page = ''
+
+    if (page_object.has_previous()):
+        prev_page = '?' + urllib.parse.urlencode({'page': page_object.previous_page_number()})
+    else:
+        prev_page = ''
 
     return render_to_response('index.html', context={
         'bus_stations':  bus_stations_show,
-        'current_page': 1,
-        'prev_page_url': prev_page,# None
-        'next_page_url': next_page # 'bus_stations/?page=2'
+        'current_page': page_object.number,
+        'prev_page_url': prev_page,
+        'next_page_url': next_page
     })
 
