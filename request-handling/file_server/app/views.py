@@ -6,6 +6,7 @@ def file_list(request, date = ''):
     template_name = 'index.html'
     # Реализуйте алгоритм подготавливающий контекстные данные для шаблона по примеру:
 
+    date_filter = None
     if(date != ''):
         date_list = date.split('-')
         date_filter = datetime.datetime(int(date_list[0]), int(date_list[1]), int(date_list[2]))
@@ -33,15 +34,20 @@ def file_list(request, date = ''):
             context['files'].append(file_data)
         except FileNotFoundError:
             pass
-    context['date'] = datetime.datetime.now() #'date': datetime.date(2018, 1, 1)  # Этот параметр необязательный
+    if (date_filter != None):
+        context['date'] = datetime.date(int(date_list[0]), int(date_list[1]), int(date_list[2]))  # Этот параметр необязательный
     return render(request, template_name, context)
 
 
 def file_content(request, name):
     # Реализуйте алгоритм подготавливающий контекстные данные для шаблона по примеру:
     file_content = ''
-    for file_line in open(FILES_PATH + '\\' + name).readlines():
-        file_content += file_line
+
+    if(os.path.exists(os.path.join(FILES_PATH, name))):
+        for file_line in open(os.path.join(FILES_PATH, name)).readlines():
+            file_content += file_line
+    else:
+        file_content = 'файла не существует'
 
     return render(
         request,
