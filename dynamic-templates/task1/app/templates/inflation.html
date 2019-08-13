@@ -18,16 +18,13 @@
       <div class="row">
         <h1 class="col s12">Инфляция в России</h1>
         <div class="col s12 m8">
-        
-        <!-- Ваша логика -->
-
-          <table>
-            <thead>
-              <tr>
-                  {% for item in title %}
-                    <th>{{ item }}</th>
-                  {% endfor %}
-              </tr>
+        <table>
+          <thead>
+            <tr>
+                {% for item in title %}
+                  <th>{{ item }}</th>
+                {% endfor %}
+            </tr>
           </thead>
           <tbody>
             {% for row in years %}
