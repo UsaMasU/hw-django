@@ -1,19 +1,29 @@
 from django.shortcuts import render
 
+#view_act = 'active'
 
 def home_view(request):
     template_name = 'app/home.html'
-    return render(request, template_name)
+    context = {
+        'view_name': 'home'
+    }
+    return render(request, template_name, context)
 
 
 def about_view(request):
     template_name = 'app/about.html'
-    return render(request, template_name)
+    context = {
+        'view_name': 'about'
+    }
+    return render(request, template_name, context)
 
 
 def contacts_view(request):
     template_name = 'app/contacts.html'
-    return render(request, template_name)
+    context = {
+        'view_name': 'contacts'
+    }
+    return render(request, template_name, context)
 
 
 def examples_view(request):
@@ -33,7 +43,7 @@ def examples_view(request):
         'img': 'imac.jpg'
     }]
     context = {
-        'items': items
+        'items': items,
+        'view_name': 'examples'
     }
-    return render(request, template_name,
-                  context)
+    return render(request, template_name, context)
