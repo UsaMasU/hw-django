@@ -21,7 +21,5 @@ def inflation_view(request):
                     year_data.append(item)
                 else:
                     year_data.append('---')
-            print(year_data)
             context['years'].append(year_data)
-    return render(request, template_name,
-                  context)
+    return render(request, template_name, context)

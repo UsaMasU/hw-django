@@ -1,5 +1,5 @@
 <!DOCTYPE html>{% load static %}
-
+{% load filters %}
 <html>
   <head>
     <meta charset="UTF-8">
@@ -30,7 +30,7 @@
             {% for row in years %}
               <tr>
                 {% for item in row %}
-                  <td style="background: {{item|cell_paint}}">
+                  <td style="background: {{item|cell_paint:row}}">
                     {{ item }}
                   </td>
                 {% endfor %}

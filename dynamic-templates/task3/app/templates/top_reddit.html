@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -25,9 +24,9 @@
               <div class="card-content white-text">
                 <span class="card-title">{{ post.data.title }}
                 </span>
-                {{ post.data.selftext }}
+                {{ post.data.selftext|format_selftext:5 }}
                 <p>Дата: {{ post.data.created_utc|format_date}}</p>
-              <p>Рейтинг: {{ post.data.score }}</p>
+              <p>Рейтинг: {{ post.data.score|format_score }}</p>
                 <p>Число комментариев: {{ post.data.num_comments|format_num_comments}}</p>
               </div>
               <div class="card-action">
