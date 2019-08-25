@@ -8,7 +8,9 @@
             <h1>Телефон</h1>
         </div>
         <div class="content">
-
+            <h2><a href="/catalog">{{ phone.name }}</a></h2>
+            <p> Стоимость: {{phone.price}}</p>
+            <img src = {{phone.image}} alt={{phone.name}}>
         </div>
     </div>
 {% endblock %}

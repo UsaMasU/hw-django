@@ -21,3 +21,25 @@ class IphoneSE(models.Model):
     color = models.TextField()
     accum = models.TextField()
     cam_dpi = models.TextField()
+
+
+class Asus(models.Model):
+    cost = models.TextField()
+    name = models.TextField()
+    size = models.TextField()
+    os = models.TextField()
+    ram = models.TextField()
+    color = models.TextField()
+    accum = models.TextField()
+    cam_dpi = models.TextField()
+
+
+class Xiaomi(models.Model):
+    cost = models.TextField()
+    name = models.TextField()
+    size = models.TextField()
+    os = models.TextField()
+    ram = models.TextField()
+    color = models.TextField()
+    accum = models.TextField()
+    cam_dpi = models.TextField()

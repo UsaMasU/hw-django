@@ -3,9 +3,56 @@
 
 {% block title %}Каталог{% endblock %}
 {% block content %}
+
     <div class="container">
         <div class="header">
             <h1>Сравнение телефонов</h1>
+                <table class="u-full-width">
+                    <thead>
+                        <tr>
+                            {% for phone in phones %}
+                                <th>{{ phone.name }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                {% for phone in phones %}
+                                    <td>{{ phone.cost }}</td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                {% for phone in phones %}
+                                    <td>{{ phone.size }}</td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                {% for phone in phones %}
+                                    <td>{{ phone.os }}</td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                {% for phone in phones %}
+                                    <td>{{ phone.ram }}</td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                {% for phone in phones %}
+                                    <td>{{ phone.color }}</td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                {% for phone in phones %}
+                                    <td>{{ phone.cam_dpi }}</td>
+                                {% endfor %}
+                            </tr>
+                            <tr>
+                                {% for phone in phones %}
+                                    <td>{{ phone.accum }}</td>
+                                {% endfor %}
+                            </tr>
+                    </tbody>
+                </table>
         </div>
     </div>
 {% endblock %}
