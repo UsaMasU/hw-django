@@ -6,9 +6,9 @@
     <div class="row">
       <div class="col s12">
         <h1 class="col s12">Каталог компьютеров Apple</h1>
-
-        {% include "app/catalog_pc.html" with catalog_items=items %}
-
+        {% for item in items %}
+            {% include "app/pc_card.html" with pc=item %}
+        {% endfor %}
       </div>
     </div>
 

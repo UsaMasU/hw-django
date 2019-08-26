@@ -17,8 +17,8 @@ def cell_paint(value, row):
     if (float(value) > 1.0 and float(value) < 2.0 ):
         return 'pink'
 
-    if (float(value) > 2.0 and float(value) < 5.0 ):
+    if (float(value) >= 2.0 and float(value) < 5.0 ):
         return 'crimson'
 
-    if (float(value) > 5.0):
+    if (float(value) >= 5.0):
         return 'red'

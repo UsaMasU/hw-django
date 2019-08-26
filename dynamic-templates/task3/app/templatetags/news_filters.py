@@ -32,7 +32,7 @@ def format_score(value = 0):
     if(value < -5):
         score_message = 'все плохо'
         return f'{score_message}'
-    if (value > -5 and value < 5):
+    if (value >= -5 and value <= 5):
         score_message = 'нейтрально'
         return f'{score_message}'
 
@@ -42,7 +42,7 @@ def format_num_comments(value):
         comments_message = '50+'
         return f'{comments_message}'
 
-    if (value > 0 and value < 50):
+    if (value > 0 and value <= 50):
         comments_message = str(value)
         return f'{comments_message}'
 
@@ -52,15 +52,16 @@ def format_num_comments(value):
 
 @register.filter
 def format_selftext(text, count):
-    str_start = ''
-    for word in text.split(' ')[0:count]:
-        str_start += word + ' '
-
-    str_end = ' '
-    for word in text.split(' ')[-count:]:
-        str_end += word + ' '
-
-    return f'{str_start}...{str_end}'
+    if(len(text.split(' ')) >= count * 2):
+        str_start = ''
+        for word in text.split(' ')[0:count]:
+            str_start += word + ' '
+        str_end = ' '
+        for word in text.split(' ')[-count:]:
+            str_end += word + ' '
+        return ''.join(str_start) + '. . .' + ''.join(str_end)
+    else:
+        return text
 
 
 
