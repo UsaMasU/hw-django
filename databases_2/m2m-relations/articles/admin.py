@@ -10,18 +10,11 @@ class RelationshipInlineFormset(BaseInlineFormSet):
     def clean(self):
         base_status_count = 0
         for form in self.forms:
-            # В form.cleaned_data будет словарь с данными
-            # каждой отдельной формы, которые вы можете проверить
-
-            if(form.cleaned_data.get('base_status')):
+            if form.cleaned_data.get('base_status'):
                 base_status_count += 1
-
-            # вызовом исключения ValidationError можно указать админке о наличие ошибки
-            # таким образом объект не будет сохранен,
-            # а пользователю выведется соответствующее сообщение об ошибке
-        if (base_status_count == 0):
+        if base_status_count == 0:
             raise ValidationError('Укажите основной раздел')
-        if(base_status_count > 1):
+        if base_status_count > 1:
             raise ValidationError('Основным может быть только один радел')
         return super().clean()  # вызываем базовый код переопределяемого метода
 
@@ -37,7 +30,7 @@ class ArticleAdmin(admin.ModelAdmin):
 
 
 class TopicAdmin(admin.ModelAdmin):
-    inlines = (RelationshipInline,)
+    pass
 
 
 admin.site.register(Article, ArticleAdmin)
