@@ -7,6 +7,8 @@ from articles.views import articles_list
 
 urlpatterns = [
     path('', articles_list, name='articles'),
+    path('authors/', articles_list, name='articles'),
+    path('genres/', articles_list, name='articles'),
 ]
 
 if settings.DEBUG:

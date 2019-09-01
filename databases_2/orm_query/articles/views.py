@@ -5,57 +5,48 @@ from .models import Article
 
 
 def articles_list(request):
+
     template_name = 'articles/news.html'
-    object_list = []
+    object_topics = []
+    genre_items = {}
+    author_items = {}
 
-    # items = Article.objects.defer('genre')
-    # items = Article.objects.all()
+    author = request.GET.get('author')
+    genre = request.GET.get('genre')
 
-    #items = Article.objects.get(author_id=3)
+    if author != None:
+        object_list = Article.objects.all().select_related('author').filter(author__name=author)
+    elif genre != None:
+        object_list = Article.objects.all().select_related('genre').filter(genre__name=genre)
+    else:
+        object_list = Article.objects.order_by('-published_at')[:3]
 
-    items = Article.objects.select_related('author').select_related('genre').defer(
+    topics = Article.objects.select_related('author').select_related('genre').defer(
         'title',
         'text',
         'published_at',
         'image',
     )
 
-    print(items)
+    for topic in topics:
+        genre_items[topic.genre.name] = topic.genre.name
+        author_items[topic.author.name] = topic.author.name
 
-    # "articles_article".
-    # "author_id",
-    # "articles_article".
-    # "genre_id",
-    # "articles_article".
-    # "title",
-    # "articles_article".
-    # "text",
-    # "articles_article".
-    # "published_at",
-    # "articles_article".
-    # "image",
-    # "articles_author".
-    # "id",
-    # "articles_author".
-    # "name",
-    # "articles_author".
-    # "phone",
-    # "articles_genre".
-    # "id",
-    # "articles_genre".
-    # "name"
+    for genre in genre_items:
+        genre_obj = {
+            'genre': genre
+        }
+        object_topics.append(genre_obj)
 
-    for item in items:
-        print(item.author.name)
-        print(item.genre.name)
+    for author in author_items:
+        author_obj = {
+            'author': author
+        }
+        object_topics.append(author_obj)
 
-    # object_list = articles
     context = {
         'object_list': object_list,
+        'topics': object_topics
     }
-
-    # используйте этот параметр для упорядочивания результатов
-    # https://docs.djangoproject.com/en/2.2/ref/models/querysets/#django.db.models.query.QuerySet.order_by
-    ordering = '-published_at'
 
     return render(request, template_name, context)
