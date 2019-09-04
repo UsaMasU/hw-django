@@ -22,4 +22,13 @@ def ticket_page_view(request):
 def cities_lookup(request):
     """Ajax request предлагающий города для автоподстановки, возвращает JSON"""
     results = []
+
+    if cache.get('cities') is None:
+        cities = City.objects.all()
+        for city in cities:
+            results.append(city.name)
+        cache.set('cities', results, 30)
+    else:
+        results = cache.get('cities')
+
     return JsonResponse(results, safe=False)
