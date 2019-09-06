@@ -16,7 +16,7 @@ class Car(models.Model):
     class Meta:
         verbose_name = 'Автомобиль'
         verbose_name_plural = 'Автомобили'
-        ordering = ('-id',)
+        #ordering = ('-id',)
 
 
 class Review(models.Model):

@@ -21,6 +21,6 @@ MONTHS_CHOICES = {
 }
 
 class SearchTicket(forms.Form):
-    departure = forms.CharField(label="Город отправления", widget=AjaxInputWidget(attrs={'class': 'inline right-margin'}, url='http://127.0.0.1:8000/api/city_ajax'))
+    departure = forms.CharField(label="Город отправления", widget=AjaxInputWidget(attrs={'class': 'inline right-margin'}, url='/api/city_ajax'))
     arrival = forms.ModelChoiceField(queryset=City.objects.all(), empty_label='----------------', label='Город назначения', widget=forms.Select())
     date_time = forms.DateField(label="Дата", widget=SelectDateWidget(months=MONTHS_CHOICES))
