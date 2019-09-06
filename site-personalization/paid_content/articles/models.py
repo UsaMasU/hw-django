@@ -7,4 +7,8 @@ class Profile(models.Model):
 
 
 class Article(models.Model):
-    pass
+    title = models.CharField(max_length=256, verbose_name='Название')
+    text = models.TextField(verbose_name='Текст')
+
+    def __str__(self):
+        return f'{self.title}'

@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Article
 
 
 def show_articles(request):
@@ -9,7 +10,10 @@ def show_articles(request):
 
 
 def show_article(request, id):
-    return render(
-        request,
-        'article.html'
-    )
+    article = Article.objects.get(id=id)
+
+    context = {
+        'title': article.title,
+        'text': article.text
+    }
+    return render(request, 'article.html', context)
