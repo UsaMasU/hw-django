@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <style type="text/css">
+        #FormCenter{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          padding: 15px;
+          margin:-200px 0 0 -200px;
+          border: 2px blue solid;
+        }
+    </style>
+
+    <div id="FormCenter">
+        <form action="{% url 'main' %}" method="post">
+            {% csrf_token %}
+            <select size="3" multiple name="access_type">
+                <option disabled>Подписка</option>
+                <option value="VIP">VIP</option>
+                <option value="Standart">Standart</option>
+            </select>
+            <hr>
+            <input type="submit" value=" ПРИНЯТЬ ">
+        </form>
+    </div>
+{% endblock %}

@@ -6,12 +6,23 @@
 {% block content %}
     <div class="container">
         <div class="header">
+            <p>User: <a href=""> {{ user.get_username }} </a> |
+                profile:
+                {% if access_type == 'VIP' %}
+                    <a href="/subscribe/" style="color: red"> VIP</a>
+                {% else %}
+                    <a href="/subscribe/" style="color: blue"> Standart</a>
+                {% endif %}
+                | <a href="{% url 'logout'%}"> Logout</a></p>
             <h1>Список статей</h1>
         </div>
+        <hr>
         <div class="articles">
-            <h3><a href="/articles/1"</a>Статья 1</h3>
-            <h3><a href="/articles/2"</a>Статья 2</h3>
-            <h3><a href="/articles/3"</a>Статья 3</h3>
+            {% for article in articles %}
+                <h3><a href='/articles/{{ article.id }}'>{{ article.title }}</a></h3>
+            {% endfor %}
         </div>
+        <hr>
+         <a href="/subscribe/">Suscribe</a> | <a href="{% url 'logout'%}">Logout</a>
     </div>
 {% endblock %}
