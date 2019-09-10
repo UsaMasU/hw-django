@@ -7,8 +7,22 @@
     <div class="container">
         <div class="header">
             <h1>Игра "Угадай число"</h1>
-            <p>Загаданное число: {{ x_number }}</p>
+            {% if role == 'finder' %}
             <p>{{text}}</p>
+            <p>Попытка: {{ attempts }} </p>
+                 <form action="{% url 'home' %}" method="post">
+                    {% csrf_token %}
+                     <label for="enter_number">Введите число: </label>
+                     <input id="enter_number" type="text" name="enter_number" value="0">
+                     <input type="submit" value=" OK ">
+                </form>
+            {% else %}
+                <p>{{text}}</p>
+                {% if role == 'winner' %}
+                    <p>Число угадали с {{ attempts }} попыток</p>
+                {% endif %}
+                <p>Загаданное число: {{ x_number }}</p>
+            {% endif %}
         </div>
     </div>
 {% endblock %}
