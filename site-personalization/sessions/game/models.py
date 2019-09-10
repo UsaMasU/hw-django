@@ -9,13 +9,12 @@ class Player(models.Model):
 
 
 class Game(models.Model):
-    session_name = models.CharField(max_length=256, verbose_name='ID сессии')
-    number = models.IntegerField(default=0)
-    status = models.CharField(max_length=20, verbose_name='Статус игры')
+    x_number = models.IntegerField(default=0)
+    state = models.CharField(max_length=20, verbose_name='Статус игры')
     players = models.ManyToManyField(Player, through='PlayerGameInfo', verbose_name='Игроки')
 
     def __str__(self):
-        return self.session_name
+        return self.state
 
 
 class PlayerGameInfo(models.Model):
