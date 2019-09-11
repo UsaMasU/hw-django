@@ -19,9 +19,8 @@
             {% else %}
                 <p>{{text}}</p>
                 {% if role == 'winner' %}
-                    <p>Число угадали с {{ attempts }} попыток</p>
+                    <p>Число {{ x_number }} угадали с {{ attempts }} попыток</p>
                 {% endif %}
-                <p>Загаданное число: {{ x_number }}</p>
             {% endif %}
         </div>
     </div>
