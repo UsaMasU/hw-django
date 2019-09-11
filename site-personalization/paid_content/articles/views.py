@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Article, Profile
 from django.contrib.auth.decorators import login_required
 
@@ -10,14 +10,6 @@ def show_articles(request):
     articles= Article.objects.only('id')
     profiles = Profile.objects.only('vip_access')
     articles_show = []
-
-    if request.method == 'POST':
-        try:
-            user_profile = Profile.objects.get(vip_access=user)
-            user_profile.delete()
-        except:
-            user_profile = Profile(vip_access=user)
-            user_profile.save()
 
     for profile in profiles:
         if user == profile.vip_access:
@@ -53,6 +45,18 @@ def show_article(request, id):
 
 
 def subscribe_control(request):
+    user = request.user
+    if request.method == 'POST':
+        try:
+            user_profile = Profile.objects.get(vip_access=user)
+            user_profile.delete()
+        except:
+            user_profile = Profile(vip_access=user)
+            user_profile.save()
+        return redirect('main')
+
+
+
     articles = Article.objects.only('id')
 
     context = {

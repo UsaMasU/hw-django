@@ -26,7 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', show_articles,name='main'),
     path('articles/', show_articles),
-    path('subscribe/', subscribe_control),
+    path('subscribe/', subscribe_control, name='subscribe'),
     url(r'^articles/(?P<id>[0-9]+)/', show_article),
 ]
 

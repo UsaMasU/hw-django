@@ -14,7 +14,7 @@
     </style>
 
     <div id="FormCenter">
-        <form action="{% url 'main' %}" method="post">
+        <form action="{% url 'subscribe' %}" method="post">
             {% csrf_token %}
             <select size="3" multiple name="access_type">
                 <option disabled>Подписка</option>
