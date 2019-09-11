@@ -6,7 +6,14 @@
 {% block content %}
     <div class="container">
         <div class="header"></div>
-            Привет, <b>гость</b>.<br>
-            Пожалуйста, <a href="/signup">зарегистрируйся</a> или <a href="/login">авторизуйся</a>!
+            {% if user.is_authenticated %}
+                Привет, <b>{{ user.username }}</b>.<br>
+                <a href="/signup">Зарегистрировать нового пользователя</a><br>
+                <a href="/login">Авторизоваться под другим пользователем</a><br>
+                <a href="/logout">Выйти</a>
+            {% else %}
+                Привет, <b>гость</b>.<br>
+                Пожалуйста, <a href="/signup">зарегистрируйся</a> или <a href="/login">авторизуйся</a>!
+            {% endif %}
     </div>
 {% endblock %}
