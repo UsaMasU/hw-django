@@ -53,9 +53,7 @@ def subscribe_control(request):
         except:
             user_profile = Profile(vip_access=user)
             user_profile.save()
-        return redirect('main')
-
-
+        return redirect('_main')
 
     articles = Article.objects.only('id')
 

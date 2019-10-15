@@ -24,7 +24,7 @@ from articles.views import show_articles, show_article, subscribe_control
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', show_articles,name='main'),
+    path('', show_articles,name='_main'),
     path('articles/', show_articles),
     path('subscribe/', subscribe_control, name='subscribe'),
     url(r'^articles/(?P<id>[0-9]+)/', show_article),

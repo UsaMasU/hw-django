@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 
 import os
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# Build paths inside the project_old like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = '30sbr_@)ngzrl@ihh18&4p)9u!lu7-%0z@4nb5=tst7g5jd7-b'
@@ -72,7 +72,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-ROOT_URLCONF = 'main.urls'
+ROOT_URLCONF = '_main.urls'
 
 TEMPLATES = [
     {
@@ -91,7 +91,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'main.wsgi.application'
+WSGI_APPLICATION = '_main.wsgi.application'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
