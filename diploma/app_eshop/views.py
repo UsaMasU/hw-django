@@ -1,5 +1,4 @@
 from django.shortcuts import render
-
 from app_eshop.models import Phone
 
 
@@ -12,6 +11,7 @@ def main(request):
 def phones(request):
     print('_main page')
     template_name = 'app_eshop/smartphones.html'
+
     context = {}
     return render(request, template_name, context)
 
