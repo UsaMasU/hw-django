@@ -7,6 +7,12 @@ __pycache__/
 
 *.sqlite3
 env/
-
 ### Project specific ###
 settings_local.py
+/site-form-works/
+/creating-project/
+/databases/
+/databases_2/
+/dynamic-templates/
+/request-handling/
+/site-personalization/
