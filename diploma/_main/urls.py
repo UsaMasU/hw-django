@@ -20,7 +20,7 @@ from django.urls import path
 from django.conf import settings
 from django.urls import include
 
-from diploma.app_eshop.views import main, phone, phones
+from app_eshop.views import main, phone, phones
 
 urlpatterns = [
     path('', main, name = 'main'),
