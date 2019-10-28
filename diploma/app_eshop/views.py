@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from app_eshop.models import Phone
+from .models import Phone   # app_eshop
 
 
 def main(request):
@@ -8,12 +8,14 @@ def main(request):
     context = {}
     return render(request, template_name, context)
 
+
 def phones(request):
     print('_main page')
     template_name = 'app_eshop/smartphones.html'
-
-    context = {}
+    phones = Phone.objects.order_by("id")
+    context = {'phones': phones}
     return render(request, template_name, context)
+
 
 def phone(request, slug):
     template = 'product.html'
@@ -21,6 +23,7 @@ def phone(request, slug):
         'phone': Phone.objects.get(slug=slug)
     }
     return render(request, template, context)
+
 
 def login(request):
     template_name = 'login.html'
