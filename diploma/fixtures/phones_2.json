@@ -1,0 +1,93 @@
+[
+{
+  "model": "app_eshop.phone",
+  "pk": 1,
+  "fields": {
+    "name": "Nexus 5x",
+    "price": "500",
+    "qty": "100",
+    "image": "nexus5x.jpg",
+    "release_date": "2019-07-04",
+    "status": "available",
+    "slug": "nexus-5x"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 2,
+  "fields": {
+    "name": "iPhone 7",
+    "price": "1000",
+    "qty": "652",
+    "image": "iphone7.jpg",
+    "release_date": "2019-04-11",
+    "status": "available",
+    "slug": "iphone-7"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 3,
+  "fields": {
+    "name": "Pixel 2",
+    "price": "650",
+    "qty": "532",
+    "image": "pixel2.jpg",
+    "release_date": "2019-03-08",
+    "status": "available",
+    "slug": "pixel-2"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 4,
+  "fields": {
+    "name": "iPhone X",
+    "price": "1500",
+    "qty": "1",
+    "image": "iphone-x.jpg",
+    "release_date": "2019-10-01",
+    "status": "awaiting delivery",
+    "slug": "iphone-x"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 5,
+  "fields": {
+    "name": "Nokia 8",
+    "price": "250",
+    "qty": "0",
+    "image": "nokia_8.jpg",
+    "release_date": "2019-01-01",
+    "status": "not available",
+    "slug": "nokia-8"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 6,
+  "fields": {
+    "name": "Samsung Galaxy Edge 2",
+    "price": "769",
+    "qty": "0",
+    "image": "samsung-galaxy-edge-2.jpg",
+    "release_date": "2019-10-03",
+    "status": "awaiting delivery",
+    "slug": "samsung-galaxy-edge-2"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 7,
+  "fields": {
+    "name": "Samsung 8",
+    "price": "899",
+    "qty": "25",
+    "image": "samsungs8.jpg",
+    "release_date": "2019-08-23",
+    "status": "awaiting delivery",
+    "slug": "samsung-8"
+  }
+}
+]
