@@ -15,36 +15,9 @@
       <!-- Example row of columns -->
 
       <div class="row">
-        <div class="col-md-4">
-          <h2>Nexus 5x</h2>
-          <a href="./phone.html">
-            <img src="./static/img/nexus5x.webp" width="180">
-          </a>
-          <form>
-            <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
-          </form>
-        </div>
-
-        <div class="col-md-4">
-          <h2>iPhone 7</h2>
-          <a href="./phone.html">
-            <img src="./static/img/iphone7.webp" width="180">
-          </a>
-          <form>
-            <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
-          </form>
-        </div>
-
-        <div class="col-md-4">
-          <h2>Pixel 2</h2>
-          <a href="./phone.html">
-            <img src="./static/img/pixel2.webp" width="180">
-          </a>
-          <form>
-            <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
-          </form>
-        </div>
-
+          {% for phone in phones %}
+            {% include 'snippet_phone.html' with phone=phone  %}
+          {%endfor%}
       </div>
     </div> <!-- /container -->
 

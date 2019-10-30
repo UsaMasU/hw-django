@@ -1,16 +1,24 @@
-from django.shortcuts import render
+
+
+from django.shortcuts import render, redirect
+from django.urls import reverse
+
 from .models import Phone   # app_eshop
 
 
+def index(request):
+    print('index:', request)
+    return redirect(reverse(main))
+
+
 def main(request):
-    print('_main page')
     template_name = 'app_eshop/index.html'
-    context = {}
+    phones = Phone.objects.order_by("-id")[0:3]
+    context = {'phones': phones}
     return render(request, template_name, context)
 
 
 def phones(request):
-    print('_main page')
     template_name = 'app_eshop/smartphones.html'
     phones = Phone.objects.order_by("id")
     context = {'phones': phones}

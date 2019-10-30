@@ -17,9 +17,5 @@ class Phone(models.Model):
     status = models.CharField(max_length=30, choices=STATUS_CHOICE, default='available')
     slug = models.SlugField(max_length=100)
 
-    class Meta:
-        verbose_name = 'Смартфон'
-        verbose_name_plural = 'Смартфоны'
-
     def __str__(self):
         return self.name

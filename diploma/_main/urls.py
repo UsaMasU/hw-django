@@ -20,13 +20,15 @@ from django.urls import path
 from django.conf import settings
 from django.urls import include
 
-from app_eshop.views import main, phone, phones
+from app_eshop.views import index, main, phone, phones
 
 urlpatterns = [
-    path('', main, name = 'main'),
-    path('admin/', admin.site.urls),
-    path('smartphones/', phones),
+    path('', main, name='main'),
+    path('index.html/', index, name='index'),
+    path('smartphones/', phones, name='phones'),
     url(r'^smartphones/(?P<slug>[\w-]+)/$', phone),
+    path('empty_section.html/', index, name='empty'),
+    path('admin/', admin.site.urls)
 ]
 
 if settings.DEBUG:
