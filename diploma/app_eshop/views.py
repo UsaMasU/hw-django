@@ -1,13 +1,14 @@
+import urllib.parse
 
-
-from django.shortcuts import render, redirect
+from django.core.paginator import Paginator
+from django.shortcuts import render, redirect, render_to_response
 from django.urls import reverse
 
-from .models import Phone   # app_eshop
+from .models import Phone  # app_eshop
 
+objects_to_page = 3
 
-def index(request):
-    print('index:', request)
+def index():
     return redirect(reverse(main))
 
 
@@ -20,9 +21,32 @@ def main(request):
 
 def phones(request):
     template_name = 'app_eshop/smartphones.html'
+
     phones = Phone.objects.order_by("id")
-    context = {'phones': phones}
-    return render(request, template_name, context)
+
+    page_number = request.GET.get('page')
+    paginator = Paginator(phones, objects_to_page)
+    page_object = paginator.get_page(page_number)
+    phones_show = paginator.page(page_object.number).object_list
+
+    #print(paginator.num_pages)
+
+    if (page_object.has_next()):
+        next_page = '?' + urllib.parse.urlencode({'page': page_object.next_page_number()})
+    else:
+        next_page = ''
+
+    if (page_object.has_previous()):
+        prev_page = '?' + urllib.parse.urlencode({'page': page_object.previous_page_number()})
+    else:
+        prev_page = ''
+
+    return render_to_response(template_name, context={
+       'phones': phones_show,
+       'current_page': page_object.number,
+       'prev_page_url': prev_page,
+       'next_page_url': next_page
+    })
 
 
 def phone(request, slug):
