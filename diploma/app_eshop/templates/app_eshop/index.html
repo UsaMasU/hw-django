@@ -3,6 +3,9 @@
 
 {% block content %}
 
+{% include '_menu.html' with active_page="main" %}
+
+
   <main role="main">
     <div class="jumbotron">
       <div class="container">
@@ -16,7 +19,7 @@
 
       <div class="row">
           {% for phone in phones %}
-            {% include 'snippet_phone.html' with phone=phone  %}
+            {% include '_snippet_phone.html' with phone=phone phone_url="smartphones/phone/"  %}
           {%endfor%}
       </div>
     </div> <!-- /container -->

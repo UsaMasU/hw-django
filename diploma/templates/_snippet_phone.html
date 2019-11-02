@@ -4,9 +4,13 @@
 
         <div class="col-md-4">
           <h5>{{phone.name}}</h5>
-          <a href="./phone/{{phone.slug}}">
+          {% if phone_url %}
+            <a href="{{phone_url}}{{phone.slug}}">
+          {% else %}
+            <a href="./phone/{{phone.slug}}">
+          {% endif%}
             <img src="/static/img/{{phone.image}}" alt={{phone.name}} width="180" height="180">
-          </a>
+            </a></a>
           <form>
             <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
           </form>
