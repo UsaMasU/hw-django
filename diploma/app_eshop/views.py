@@ -50,6 +50,7 @@ def phones(request):
 
 def phone(request, slug):
     template = 'app_eshop/phone.html'
+    print('phone')
     context = {
         'phone': Phone.objects.get(slug=slug)
     }

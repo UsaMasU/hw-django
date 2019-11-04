@@ -8,6 +8,7 @@ class ReviewForm(forms.ModelForm):
     class Meta(object):
         model = Review
         exclude = ('id', 'product')
+        #exclude = ()
 
     def clean(self):
         return self.cleaned_data

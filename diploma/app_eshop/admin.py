@@ -1,6 +1,5 @@
 from django.contrib import admin
-from .models import Phone
-
+from .models import Phone, Review
 
 @admin.register(Phone)
 class PhoneAdmin(admin.ModelAdmin):
@@ -9,3 +8,8 @@ class PhoneAdmin(admin.ModelAdmin):
     search_fields = ('name', 'id')
     prepopulated_fields = {'slug': ('name',)}
     ordering = ('name', 'id')
+
+
+@admin.register(Review)
+class ReviewAdmin(admin.ModelAdmin):
+    pass

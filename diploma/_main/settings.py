@@ -37,8 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'diploma.app_eshop',
-    'diploma.app_users',
+    'app_eshop',
+    'app_users',
 
     'debug_toolbar',
 ]
