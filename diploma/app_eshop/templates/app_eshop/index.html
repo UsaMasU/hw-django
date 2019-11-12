@@ -19,7 +19,7 @@
 
       <div class="row">
           {% for phone in phones %}
-            {% include '_snippet_phone.html' with phone=phone phone_url="smartphones/phone/"  %}
+            {% include '_product_snippet.html' with product=phone product_url=phone.section %}
           {%endfor%}
       </div>
     </div> <!-- /container -->
@@ -34,16 +34,10 @@
     <div class="container mb-5">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>Фуфайка</h2>
-          <a href="./phone.html">
-            <img src="./static/img/fufajka.jpg" width="180">
-          </a>
-
-          <form>
-            <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
-          </form>
-        </div>
+        {% for product in other_products %}
+          {% include '_product_snippet.html' with product=product product_url=product.section %}
+        {%endfor%}
+      </div>
 
       </div>
     </div> <!-- /container -->

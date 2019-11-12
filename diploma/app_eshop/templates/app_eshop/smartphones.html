@@ -4,40 +4,6 @@
 {% block content %}
 {% include '_menu.html' with active_page="smartphones" %}
 
-
-      <div class="container">
-        <h1>Смартфоны</h1>
-        <nav aria-label="Pagination">
-            <ul class="pagination justify-content-left">
-                {% if prev_page_url %}
-                    <li class="page-item">
-                {% else %}
-                    <li class="page-item disabled">
-                {% endif %}
-                <a class="page-link" href="{{ prev_page_url }}"><<</a></li>
-
-                {% for num in num_pages %}
-                    {% if num == current_page %}
-                        <li class="page-item active"><a class="page-link" href="">{{ current_page }}</a></li>
-                    {% else %}
-                        <li class="page-item"><a class="page-link" href="?page={{ num }}">{{ num }}</a></li>
-                    {% endif %}
-                {%endfor%}
-
-                {% if next_page_url %}
-                    <li class="page-item">
-                {% else %}
-                    <li class="page-item disabled">
-                {% endif %}
-                <a class="page-link" href="{{ next_page_url }}">>></a></li>
-            </ul>
-        </nav><br>
-
-        <div class="row">
-          {% for phone in phones %}
-            {% include '_snippet_phone.html' with phone=phone  %}
-          {%endfor%}
-        </div>
-      </div>
+    {% include '_product_pages.html' with title="Смартфоны" products=phones %}
 
 {% endblock %}

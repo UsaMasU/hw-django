@@ -1,0 +1,268 @@
+[
+{
+  "model": "app_eshop.product",
+  "pk": 1,
+  "fields": {
+    "section": "smartphones",
+    "name": "Nexus 5x",
+    "price": "500",
+    "qty": "100",
+    "image": "nexus5x.jpg",
+    "release_date": "2019-07-04",
+    "status": "available",
+    "slug": "nexus-5x"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 2,
+  "fields": {
+    "section": "smartphones",
+    "name": "iPhone 7",
+    "price": "1000",
+    "qty": "652",
+    "image": "iphone7.jpg",
+    "release_date": "2019-04-11",
+    "status": "available",
+    "slug": "iphone-7"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 3,
+  "fields": {
+    "section": "smartphones",
+    "name": "Pixel 2",
+    "price": "650",
+    "qty": "532",
+    "image": "pixel2.jpg",
+    "release_date": "2019-03-08",
+    "status": "available",
+    "slug": "pixel-2"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 4,
+  "fields": {
+    "section": "smartphones",
+    "name": "iPhone X",
+    "price": "1500",
+    "qty": "1",
+    "image": "iphone-x.jpg",
+    "release_date": "2019-10-01",
+    "status": "awaiting delivery",
+    "slug": "iphone-x"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 5,
+  "fields": {
+    "section": "smartphones",
+    "name": "Nokia 8",
+    "price": "250",
+    "qty": "0",
+    "image": "nokia_8.jpg",
+    "release_date": "2019-01-01",
+    "status": "not available",
+    "slug": "nokia-8"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 6,
+  "fields": {
+    "section": "smartphones",
+    "name": "Samsung Galaxy Edge 2",
+    "price": "769",
+    "qty": "0",
+    "image": "samsung-galaxy-edge-2.jpg",
+    "release_date": "2019-10-03",
+    "status": "awaiting delivery",
+    "slug": "samsung-galaxy-edge-2"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 7,
+  "fields": {
+    "section": "smartphones",
+    "name": "Samsung 8",
+    "price": "899",
+    "qty": "25",
+    "image": "samsungs8.jpg",
+    "release_date": "2019-08-23",
+    "status": "awaiting delivery",
+    "slug": "samsung-8"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 8,
+  "fields": {
+    "section": "smartphones",
+    "name": "Archos Access 50",
+    "price": "150",
+    "qty": "300",
+    "image": "archos_access_50.jpg",
+    "release_date": "2018-11-09",
+    "status": "available",
+    "slug": "archos-access-50"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 9,
+  "fields": {
+    "section": "smartphones",
+    "name": "Caterpillar S31",
+    "price": "439",
+    "qty": "540",
+    "image": "caterpillar_s31.jpg",
+    "release_date": "2018-08-08",
+    "status": "available",
+    "slug": "caterpillar-s31"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 10,
+  "fields": {
+    "section": "smartphones",
+    "name": "HTC Desire 650",
+    "price": "260",
+    "qty": "0",
+    "image": "HTC_Desire_650.jpg",
+    "release_date": "2016-11-02",
+    "status": "discontinued",
+    "slug": "htc-desire-650"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 11,
+  "fields": {
+    "section": "smartphones",
+    "name": "Huawei Y5",
+    "price": "321",
+    "qty": "0",
+    "image": "huawei_y5.jpg",
+    "release_date": "2017-05-05",
+    "status": "discontinued",
+    "slug": "huawei-y5"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 12,
+  "fields": {
+    "section": "smartphones",
+    "name": "LG K8",
+    "price": "357",
+    "qty": "220",
+    "image": "LG_k8.jpg",
+    "release_date": "2017-11-09",
+    "status": "available",
+    "slug": "lg-k8"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 13,
+  "fields": {
+    "section": "smartphones",
+    "name": "LG Leon H324",
+    "price": "110",
+    "qty": "010",
+    "image": "LG_leon_H324.jpg",
+    "release_date": "2017-08-23",
+    "status": "not available",
+    "slug": "lg-leon-h324"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 14,
+  "fields": {
+    "section": "smartphones",
+    "name": "Motorola Moto X",
+    "price": "390",
+    "qty": "150",
+    "image": "Motorola_moto_x_style.jpg",
+    "release_date": "2017-11-11",
+    "status": "available",
+    "slug": "motorola-moto-x"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 15,
+  "fields": {
+    "section": "smartphones",
+    "name": "Runbo",
+    "price": "300",
+    "qty": "0",
+    "image": "Runbo_F2.jpg",
+    "release_date": "2018-11-17",
+    "status": "awaiting delivery",
+    "slug": "runbo"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 16,
+  "fields": {
+    "section": "smartphones",
+    "name": "teXet ROCK TM-5201",
+    "price": "279",
+    "qty": "0",
+    "image": "teXet_ROCK_TM-5201.jpg",
+    "release_date": "2018-07-11",
+    "status": "awaiting delivery",
+    "slug": "texet-rock-tm-5201"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 17,
+  "fields": {
+    "section": "smartphones",
+    "name": "Vertex Impress Omega",
+    "price": "400",
+    "qty": "115",
+    "image": "Vertex_Impress_Omega.jpg",
+    "release_date": "2019-03-05",
+    "status": "available",
+    "slug": "vertex-impress-omega"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 18,
+  "fields": {
+    "section": "smartphones",
+    "name": "Vivo V9",
+    "price": "580",
+    "qty": "0",
+    "image": "vivo_v9_1.jpg",
+    "release_date": "2019-03-09",
+    "status": "awaiting delivery",
+    "slug": "vivo-v9"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 19,
+  "fields": {
+    "section": "smartphones",
+    "name": "Xiaomi Shark AGM X2",
+    "price": "700",
+    "qty": "330",
+    "image": "Xiaomi_Shark_AGM-X2.jpg",
+    "release_date": "2018-10-22",
+    "status": "available",
+    "slug": "xiaomi-shark-agm-x2"
+  }
+}
+]

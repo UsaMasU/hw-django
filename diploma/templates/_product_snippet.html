@@ -3,13 +3,13 @@
 {% block content %}
 
         <div class="col-md-4">
-          <h5>{{phone.name}}</h5>
-          {% if phone_url %}
-            <a href="{{phone_url}}{{phone.slug}}">
+          <h5>{{product.name}}</h5>
+          {% if product_url %}
+            <a href="{{product_url}}/{{product.slug}}">
           {% else %}
-            <a href="./phone/{{phone.slug}}">
+            <a href="./{{product.slug}}">
           {% endif%}
-            <img src="/static/img/{{phone.image}}" alt={{phone.name}} width="180" height="180">
+            <img src="/static/img/{{product.image}}" alt={{product.name}} width="180" height="180">
             </a></a>
           <form>
             <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
