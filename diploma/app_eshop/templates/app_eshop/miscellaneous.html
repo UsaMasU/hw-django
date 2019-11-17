@@ -1,0 +1,9 @@
+{% extends "_base.html" %}
+{% load static %}
+
+{% block content %}
+{% include '_menu.html' with active_page="miscellaneous" %}
+
+    {% include '_product_pages.html' with title="Разные гаджеты" products=objects %}
+
+{% endblock %}

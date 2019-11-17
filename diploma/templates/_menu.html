@@ -37,10 +37,19 @@
             <a class="nav-link" href="/accessories">Аксесcуары</a>
           </li>
         </ul>
+
         <a class="btn btn-outline-success my-2 my-sm-0" role="button"
           href="/cart">Корзина</a>
-        <a class="btn btn-outline-success my-2 my-sm-0" role="button"
-          href="/login">Войти</a>
+
+        {% if user.get_username == "" %}
+          <a class="btn btn-outline-success my-2 my-sm-0" role="button"
+          href="/account/login">Войти</a>
+        {% else %}
+          <p class="btn btn-primary my-2 my-sm-0" >{{ user.get_username }}</p>
+          <a class="btn btn-outline-success my-2 my-sm-0" role="button"
+          href="{% url 'user_logout'%}">Выйти</a>
+        {% endif %}
+
       </div>
     </nav>
 

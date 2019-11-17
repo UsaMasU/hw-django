@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Review
+from .models import Product, Review, Phone, Cultural, Miscellaneous
 
 
 @admin.register(Product)
@@ -13,4 +13,19 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(Review)
 class ReviewAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Phone)
+class PhoneAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Cultural)
+class CulturalAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Miscellaneous)
+class MiscellaneousAdmin(admin.ModelAdmin):
     pass
