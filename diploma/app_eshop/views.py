@@ -5,7 +5,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, render_to_response, get_object_or_404
 from django.urls import reverse
 
-from .models import Product  # app_eshop
+from .models import Product, Review  # app_eshop
 from .forms import ReviewForm
 
 
@@ -74,12 +74,22 @@ def phone(request, slug):
 
     if request.method == 'POST':
         print('POST:', request.POST)
+        #form=request.POST
         prod = get_object_or_404(Product, slug=slug)
-        print(prod.id)
+        #print(prod.id)
+        form = ReviewForm(request.POST)
+        #for field in form:
+        #    print(field)
+        print(form.is_valid())
+
+        review = Review(product=prod, name=form.cleaned_data['name'], text=form.cleaned_data['text'], rating=form.cleaned_data['rating'])
+        review.save()
         return redirect(reverse('phone', args=[slug]))
     else:
         # pprint([i for i in dir(request) if not i.startswith('_')])
+        form = ReviewForm
         context = {
+            'form': form,
             'phone': Product.objects.get(slug=slug)
         }
         return render(request, template, context)

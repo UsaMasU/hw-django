@@ -31,17 +31,17 @@ class Product(models.Model):
 
 class Review(models.Model):
     RATING_CHOICE = (
-       ('★', '★'),
-       ('★★', '★★'),
-       ('★★★', '★★★'),
-       ('★★★★', '★★★★'),
-       ('★★★★★', '★★★★★')
+       ('1', '★'),
+       ('2', '★★'),
+       ('3', '★★★'),
+       ('4', '★★★★'),
+       ('5', '★★★★★')
     )
     publish_date = models.DateTimeField(auto_now_add=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     name = models.CharField(verbose_name='Author\'s name', max_length=30)
     text = models.TextField(verbose_name='Review text', max_length=255)
-    rating = models.CharField(max_length=30, choices=RATING_CHOICE, default='★')
+    rating = models.CharField(max_length=30, choices=RATING_CHOICE, default='1')
 
     def __str__(self):
         return str(self.product.name) + ' ' + self.text[:50]

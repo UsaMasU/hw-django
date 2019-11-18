@@ -5,6 +5,7 @@ from .models import Review
 
 
 class ReviewForm(forms.ModelForm):
+#class ReviewForm(forms.Form):
     RATE_CHOICES = [
         ('1', '★'),
         ('2', '★★'),
@@ -12,14 +13,14 @@ class ReviewForm(forms.ModelForm):
         ('4', '★★★★'),
         ('5', '★★★★★'),
     ]
-    #public_date = forms.DateField(initial=datetime.date.today)
+    name = forms.CharField(label='Имя автора')
     text = forms.CharField(widget=forms.Textarea, label='Отзыв')
-    stars = forms.CharField(label='Ваша оценка:', widget=forms.RadioSelect(choices=RATE_CHOICES))
+    rating = forms.CharField(label='Ваша оценка:', widget=forms.RadioSelect(choices=RATE_CHOICES))
 
     class Meta(object):
         model = Review
-        # exclude = ('id', 'product')
-        exclude = ()
+        exclude = ('id', 'product')
+        #exclude = ()
 
     def clean(self):
         return self.cleaned_data
