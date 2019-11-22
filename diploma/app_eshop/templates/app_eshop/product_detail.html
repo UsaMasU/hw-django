@@ -18,8 +18,6 @@
           <p>Неплохой телефон</p>
           <form method="post" action="{% url 'phone' phone.slug %}">
             {% csrf_token %}
-            <!--input type="hidden" name="csrfmiddlewaretoken"
-                   value="N4vcBqzjoYkU7OTDuAT8hq8srpvYX44nJsswuP7e3EYg0Hq8DgxuR0eiXWbSr5RZ"-->
             <input type="hidden" name="merchandise_id" value="1">
             <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
           </form>

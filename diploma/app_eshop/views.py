@@ -71,11 +71,31 @@ def miscellaneous(request):
 def phone(request, slug):
     template = 'app_eshop/product_detail.html'
     print('phone view:')
+    #page_number = request.GET.get('page')
+
+    if 'cart' in request.session:
+        print(request.session['cart'])
 
     if request.method == 'POST':
         print('POST:', request.POST)
-        #form=request.POST
         prod = get_object_or_404(Product, slug=slug)
+
+        if 'merchandise_id' in request.POST:
+            print('product to cart')
+            if not ('cart' in request.session):
+                request.session['cart'] = []
+            busket = request.session['cart']
+            product_to_cart = {'product': prod.id,
+                               'quantity': request.POST['merchandise_id']
+                               }
+            busket.append(product_to_cart)
+
+            request.session['cart'] = busket
+            return redirect(reverse('phone', args=[slug]))
+        print('product show')
+
+        #form=request.POST
+
         #print(prod.id)
         form = ReviewForm(request.POST)
         #for field in form:
@@ -117,6 +137,15 @@ def product(request, slug):
 
 def cart(request):
     template = 'app_eshop/cart.html'
+    if not ('cart' in request.session):
+        request.session['cart'] = []
+    busket = request.session['cart']
+    #product_to_cart = {'product': prod.id,
+    #                   'quantity': request.POST['merchandise_id']
+    #                   }
+    #busket.append(product_to_cart)
+
+    request.session['cart'] = busket
     context = {}
     return render(request, template, context)
 
