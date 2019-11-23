@@ -5,7 +5,7 @@ from django.core.paginator import Paginator
 from django.shortcuts import render, redirect, render_to_response, get_object_or_404
 from django.urls import reverse
 
-from .models import Product, Review  # app_eshop
+from .models import Product, Review, Phone  # app_eshop
 from .forms import ReviewForm
 
 
@@ -78,13 +78,15 @@ def phone(request, slug):
 
     if request.method == 'POST':
         print('POST:', request.POST)
-        prod = get_object_or_404(Product, slug=slug)
+        product_get = get_object_or_404(Product, slug=slug)
 
         if 'merchandise_id' in request.POST:
             print('product to cart')
             if not ('cart' in request.session):
                 request.session['cart'] = []
-            product_to_cart = {'product': prod.id,
+            product_to_cart = {'id': product_get.id,
+                               'name': product_get.name,
+                               'description': request.POST['description'],
                                'quantity': request.POST['merchandise_id']
                                }
             cart_current = request.session['cart']
@@ -98,15 +100,23 @@ def phone(request, slug):
 
         print(form.is_valid())
 
-        review = Review(product=prod, name=form.cleaned_data['name'], text=form.cleaned_data['text'], rating=form.cleaned_data['rating'])
+        review = Review(product=product_get,
+                        name=form.cleaned_data['name'],
+                        text=form.cleaned_data['text'],
+                        rating=form.cleaned_data['rating'])
         review.save()
         return redirect(reverse('phone', args=[slug]))
     else:
         # pprint([i for i in dir(request) if not i.startswith('_')])
         form = ReviewForm
+
+        phone_get = Product.objects.get(slug=slug)
+        phone_detailed = Phone.objects.get(product_id=phone_get.id)
+
         context = {
             'form': form,
-            'phone': Product.objects.get(slug=slug)
+            'phone': phone_get,
+            'detailed': phone_detailed,
         }
         return render(request, template, context)
 
@@ -141,12 +151,12 @@ def cart(request):
     for product in cart_current:
         match = False
         for product_was in cart_optimize:
-            if product['product'] == product_was['product']:
+            if product['id'] == product_was['id']:
                 match = True
         if match:
             continue
         for product_cmp in cart_current[cart_current.index(product)+1:]:
-            if product['product'] == product_cmp['product']:
+            if product['id'] == product_cmp['id']:
                 product['quantity'] = int(product['quantity']) + int(product_cmp['quantity'])
         cart_optimize.append(product)
 

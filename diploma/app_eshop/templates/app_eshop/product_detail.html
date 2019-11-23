@@ -19,6 +19,7 @@
           <form method="post" action="{% url 'phone' phone.slug %}">
             {% csrf_token %}
             <input type="hidden" name="merchandise_id" value="1">
+            <input type="hidden" name="description" value="{{detailed.description}}">
             <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
           </form>
         </div>
