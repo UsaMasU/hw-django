@@ -84,22 +84,18 @@ def phone(request, slug):
             print('product to cart')
             if not ('cart' in request.session):
                 request.session['cart'] = []
-            busket = request.session['cart']
             product_to_cart = {'product': prod.id,
                                'quantity': request.POST['merchandise_id']
                                }
-            busket.append(product_to_cart)
-
-            request.session['cart'] = busket
+            cart_current = request.session['cart']
+            cart_current.append(product_to_cart)
+            request.session['cart'] = cart_current
             return redirect(reverse('phone', args=[slug]))
+
         print('product show')
-
         #form=request.POST
-
-        #print(prod.id)
         form = ReviewForm(request.POST)
-        #for field in form:
-        #    print(field)
+
         print(form.is_valid())
 
         review = Review(product=prod, name=form.cleaned_data['name'], text=form.cleaned_data['text'], rating=form.cleaned_data['rating'])
@@ -139,13 +135,25 @@ def cart(request):
     template = 'app_eshop/cart.html'
     if not ('cart' in request.session):
         request.session['cart'] = []
-    busket = request.session['cart']
-    #product_to_cart = {'product': prod.id,
-    #                   'quantity': request.POST['merchandise_id']
-    #                   }
-    #busket.append(product_to_cart)
+    cart_current = request.session['cart']
+    cart_optimize = []
 
-    request.session['cart'] = busket
-    context = {}
+    for product in cart_current:
+        match = False
+        for product_was in cart_optimize:
+            if product['product'] == product_was['product']:
+                match = True
+        if match:
+            continue
+        for product_cmp in cart_current[cart_current.index(product)+1:]:
+            if product['product'] == product_cmp['product']:
+                product['quantity'] = int(product['quantity']) + int(product_cmp['quantity'])
+        cart_optimize.append(product)
+
+    pprint(cart_optimize)
+
+    context = {
+        'products': cart_optimize
+    }
     return render(request, template, context)
 
