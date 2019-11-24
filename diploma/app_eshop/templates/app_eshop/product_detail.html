@@ -13,10 +13,11 @@
         <div class="col-md-12">
           <h2>{{phone.name}}</h2>
 
-          <img src="/static/img/{{phone.image}}" width="120">
+          <img src="/static/img/{{product.image}}" width="120">
 
           <p>Неплохой телефон</p>
-          <form method="post" action="{% url 'phone' phone.slug %}">
+          <!--form method="post" action="{% url 'phone' product.slug %}"-->
+          <form method="post" action="{% url name_url product.slug %}">
             {% csrf_token %}
             <input type="hidden" name="merchandise_id" value="1">
             <input type="hidden" name="description" value="{{detailed.description}}">

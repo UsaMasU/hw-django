@@ -20,8 +20,9 @@ from django.urls import path
 from django.conf import settings
 from django.urls import include
 
-from app_eshop.views import index, main, phone, phones, accessories, cultural, miscellaneous, cart
+from app_eshop.views import index, main, phones, accessories, cultural, miscellaneous, cart
 from app_users.views import user_login, user_logout, user_register
+from app_eshop.views import misc, cult, product  # phone,
 
 urlpatterns = [
     path('', main, name='main'),
@@ -31,7 +32,9 @@ urlpatterns = [
     path('miscellaneous/', miscellaneous, name='miscellaneous'),
     path('accessories/', accessories, name='accessories'),
     path('cart/', cart, name='cart'),
-    url(r'smartphones/(?P<slug>[\w-]+)/$', phone, name='phone'),
+    url(r'smartphones/(?P<slug>[\w-]+)/$', product, name='phone'),
+    url(r'cultural/(?P<slug>[\w-]+)/$', product, name='cult'),
+    url(r'miscellaneous/(?P<slug>[\w-]+)/$', product, name='misc'),
     url(r'^account/register/$', user_register, name='user_register'),
     url(r'^account/login/$', user_login, name='user_login'),
     url(r'^account/logout/$', user_logout, name='user_logout'),
