@@ -20,16 +20,15 @@ from django.urls import path
 from django.conf import settings
 from django.urls import include
 
-from app_eshop.views import index, main, phones, accessories, cultural, miscellaneous, cart
+from app_eshop.views import main, accessories, gadgets, product, cart
 from app_users.views import user_login, user_logout, user_register
-from app_eshop.views import misc, cult, product  # phone,
 
 urlpatterns = [
-    path('', main, name='main'),
-    path('index/', index, name='index'),
-    path('smartphones/', phones, name='phones'),
-    path('cultural/', cultural, name='cultural'),
-    path('miscellaneous/', miscellaneous, name='miscellaneous'),
+    path('', main),
+    path('index/', main, name='main'),
+    path('smartphones/', gadgets, name='smartphones'),
+    path('cultural/', gadgets, name='cultural'),
+    path('miscellaneous/', gadgets, name='miscellaneous'),
     path('accessories/', accessories, name='accessories'),
     path('cart/', cart, name='cart'),
     url(r'smartphones/(?P<slug>[\w-]+)/$', product, name='phone'),

@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-{% include '_menu.html' with active_page="smartphones" %}
+{% include '_menu.html' with active_page="gadgets" %}
 
 
   <main role="main">
@@ -40,7 +40,7 @@
           <h4>Оставте отзыв:</h4>
             <form action="" method="post">
                 {% csrf_token %}
-                {{ form }}
+                {{ form.as_p }}
                 <br>
                 <!--input type="submit" value="Отправить отзыв"/-->
                 <button type="submit" class="btn btn-primary">Оставить</button>

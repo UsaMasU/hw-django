@@ -13,9 +13,9 @@ class ReviewForm(forms.ModelForm):
         ('4', '★★★★'),
         ('5', '★★★★★'),
     ]
-    name = forms.CharField(label='Имя автора')
+    name = forms.CharField(label='Автор')
     text = forms.CharField(widget=forms.Textarea, label='Отзыв')
-    rating = forms.CharField(label='Ваша оценка:', widget=forms.RadioSelect(choices=RATE_CHOICES))
+    rating = forms.CharField(label='Оценка:', widget=forms.RadioSelect(choices=RATE_CHOICES))
 
     class Meta(object):
         model = Review
