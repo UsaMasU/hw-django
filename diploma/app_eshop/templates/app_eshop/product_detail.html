@@ -1,4 +1,5 @@
 {% extends "_base.html" %}
+{% load filters %}
 {% load static %}
 
 {% block content %}
@@ -27,6 +28,13 @@
       </div>
       <hr>
 
+  <!--div>
+      {% for col in columns %}
+      <div class="col-md-{{ col.width }}">
+        {{ row|get_item:col.name }}
+      </div>
+      {% endfor %}
+  </div-->
       ★★★★★ <span>Вася</span>
       <p> Хороший отзыв</p>
 
