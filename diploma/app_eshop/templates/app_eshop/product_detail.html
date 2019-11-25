@@ -5,6 +5,10 @@
 {% block content %}
 {% include '_menu.html' with active_page="gadgets" %}
 
+<style>
+    .show_prop { display: none; }
+    input:checked + .show_prop { display: block; }
+</style>
 
   <main role="main">
 
@@ -28,6 +32,15 @@
       </div>
       <hr>
 
+      {% if product.section == 'smartphones' %}
+        {% include 'app_eshop/phone_detail.html' with phone=product detailed=detailed %}
+      {% elif product.section == 'cultural' %}
+        {% include 'app_eshop/culture_detail.html' with phone=product detailed=detailed %}
+      {% elif product.section == 'miscellaneous' %}
+        {% include 'app_eshop/miscellaneous_detail.html' with phone=product detailed=detailed %}
+      {% endif %}
+
+      <hr>
   <!--div>
       {% for col in columns %}
       <div class="col-md-{{ col.width }}">

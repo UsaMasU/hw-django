@@ -89,6 +89,7 @@ def product(request, slug):
         except Exception:
             product_detailed = ''
 
+        print(product_get.section)
         context = {
             'form': form,
             'product': product_get,

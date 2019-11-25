@@ -19,6 +19,11 @@ dumpdata - это встроенная команда django, с помощью 
 
 Так же есть возможность исключить таблицы . Следующая команда экспортирует всю базу данных кроме таблицы auth.permission:
 
+dumpdata (--indent)
+By default, dumpdata will output all data on a single line. It isn’t easy for humans to read
+You can use the --indent option to pretty-print the output with a number of indentation spaces
+./manage.py dumpdata auth.user --indent 2 > user.json
+
 ./manage.py dumpdata --exclude auth.permission > db.json
 По-умолчанию данные экспортируются в одну строку, без какого либо форматирования. Это не очень удобно для чтения человеком, поэтому можно указать отстуступы с помощью ключа --indent.
 Следующая команда экспортирует таблицу auth.user в более удобном для восприятия человека виде:
