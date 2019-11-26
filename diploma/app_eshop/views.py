@@ -35,7 +35,7 @@ def accessories(request):
 
 def product(request, slug):
     template = 'app_eshop/product_detail.html'
-    print('request', request.resolver_match)
+    # print('request', request.resolver_match)
     name_url = request.resolver_match.url_name
 
     #page_number = request.GET.get('page')
@@ -44,11 +44,9 @@ def product(request, slug):
         print(request.session['cart'])
 
     if request.method == 'POST':
-        print('POST:', request.POST)
         product_get = get_object_or_404(Product, slug=slug)
 
         if 'merchandise_id' in request.POST:
-            print('product to cart')
             if not ('cart' in request.session):
                 request.session['cart'] = []
             product_to_cart = {'id': product_get.id,
@@ -61,22 +59,20 @@ def product(request, slug):
             request.session['cart'] = cart_current
             return redirect(reverse(name_url, args=[slug]))
 
-        print('product show')
         form = ReviewForm(request.POST)
-
-        print(form.is_valid())
-
-        review = Review(product=product_get,
+        if form.is_valid():
+            review = Review(product=product_get,
                         name=form.cleaned_data['name'],
                         text=form.cleaned_data['text'],
                         rating=form.cleaned_data['rating'])
-        review.save()
+            review.save()
         return redirect(reverse(name_url, args=[slug]))
     else:
         # pprint([i for i in dir(request) if not i.startswith('_')])
         form = ReviewForm
 
         product_get = Product.objects.get(slug=slug)
+        product_reviews = Review.objects.all().filter(product_id=product_get.id)
         try:
             if name_url == 'phone':
                 product_detailed = Phone.objects.get(product_id=product_get.id)
@@ -89,10 +85,10 @@ def product(request, slug):
         except Exception:
             product_detailed = ''
 
-        print(product_get.section)
         context = {
             'form': form,
             'product': product_get,
+            'reviews': product_reviews,
             'name_url': name_url,
             'detailed': product_detailed,
         }

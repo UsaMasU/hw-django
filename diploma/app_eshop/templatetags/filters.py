@@ -4,7 +4,7 @@ register = template.Library()
 
 
 @register.filter
-def get_item(value, arg=''):
+def get_items(value, arg=''):
     result = ''
     if isinstance(value, dict):
         result = value.get(arg, '')

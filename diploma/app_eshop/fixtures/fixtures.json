@@ -1,0 +1,1080 @@
+[
+{
+  "model": "app_eshop.product",
+  "pk": 1,
+  "fields": {
+    "section": "smartphones",
+    "name": "Nexus 5x",
+    "price": "500",
+    "qty": "100",
+    "image": "nexus5x.jpg",
+    "release_date": "2019-07-04",
+    "status": "available",
+    "slug": "nexus-5x"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 2,
+  "fields": {
+    "section": "smartphones",
+    "name": "iPhone 7",
+    "price": "1000",
+    "qty": "652",
+    "image": "iphone7.jpg",
+    "release_date": "2019-04-11",
+    "status": "available",
+    "slug": "iphone-7"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 3,
+  "fields": {
+    "section": "smartphones",
+    "name": "Pixel 2",
+    "price": "650",
+    "qty": "532",
+    "image": "pixel2.jpg",
+    "release_date": "2019-03-08",
+    "status": "available",
+    "slug": "pixel-2"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 4,
+  "fields": {
+    "section": "smartphones",
+    "name": "iPhone X",
+    "price": "1500",
+    "qty": "1",
+    "image": "iphone-x.jpg",
+    "release_date": "2019-10-01",
+    "status": "awaiting delivery",
+    "slug": "iphone-x"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 5,
+  "fields": {
+    "section": "smartphones",
+    "name": "Nokia 8",
+    "price": "250",
+    "qty": "0",
+    "image": "nokia_8.jpg",
+    "release_date": "2019-01-01",
+    "status": "not available",
+    "slug": "nokia-8"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 6,
+  "fields": {
+    "section": "smartphones",
+    "name": "Samsung Galaxy Edge 2",
+    "price": "769",
+    "qty": "0",
+    "image": "samsung-galaxy-edge-2.jpg",
+    "release_date": "2019-10-03",
+    "status": "awaiting delivery",
+    "slug": "samsung-galaxy-edge-2"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 7,
+  "fields": {
+    "section": "smartphones",
+    "name": "Samsung 8",
+    "price": "899",
+    "qty": "25",
+    "image": "samsungs8.jpg",
+    "release_date": "2019-08-23",
+    "status": "awaiting delivery",
+    "slug": "samsung-8"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 8,
+  "fields": {
+    "section": "smartphones",
+    "name": "Archos Access 50",
+    "price": "150",
+    "qty": "300",
+    "image": "archos_access_50.jpg",
+    "release_date": "2018-11-09",
+    "status": "available",
+    "slug": "archos-access-50"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 9,
+  "fields": {
+    "section": "smartphones",
+    "name": "Caterpillar S31",
+    "price": "439",
+    "qty": "540",
+    "image": "caterpillar_s31.jpg",
+    "release_date": "2018-08-08",
+    "status": "available",
+    "slug": "caterpillar-s31"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 10,
+  "fields": {
+    "section": "smartphones",
+    "name": "HTC Desire 650",
+    "price": "260",
+    "qty": "0",
+    "image": "HTC_Desire_650.jpg",
+    "release_date": "2016-11-02",
+    "status": "discontinued",
+    "slug": "htc-desire-650"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 11,
+  "fields": {
+    "section": "smartphones",
+    "name": "Huawei Y5",
+    "price": "321",
+    "qty": "0",
+    "image": "huawei_y5.jpg",
+    "release_date": "2017-05-05",
+    "status": "discontinued",
+    "slug": "huawei-y5"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 12,
+  "fields": {
+    "section": "smartphones",
+    "name": "LG K8",
+    "price": "357",
+    "qty": "220",
+    "image": "LG_k8.jpg",
+    "release_date": "2017-11-09",
+    "status": "available",
+    "slug": "lg-k8"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 13,
+  "fields": {
+    "section": "smartphones",
+    "name": "LG Leon H324",
+    "price": "110",
+    "qty": "010",
+    "image": "LG_leon_H324.jpg",
+    "release_date": "2017-08-23",
+    "status": "not available",
+    "slug": "lg-leon-h324"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 14,
+  "fields": {
+    "section": "smartphones",
+    "name": "Motorola Moto X",
+    "price": "390",
+    "qty": "150",
+    "image": "Motorola_moto_x_style.jpg",
+    "release_date": "2017-11-11",
+    "status": "available",
+    "slug": "motorola-moto-x"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 15,
+  "fields": {
+    "section": "smartphones",
+    "name": "Runbo",
+    "price": "300",
+    "qty": "0",
+    "image": "Runbo_F2.jpg",
+    "release_date": "2018-11-17",
+    "status": "awaiting delivery",
+    "slug": "runbo"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 16,
+  "fields": {
+    "section": "smartphones",
+    "name": "teXet ROCK TM-5201",
+    "price": "279",
+    "qty": "0",
+    "image": "teXet_ROCK_TM-5201.jpg",
+    "release_date": "2018-07-11",
+    "status": "awaiting delivery",
+    "slug": "texet-rock-tm-5201"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 17,
+  "fields": {
+    "section": "smartphones",
+    "name": "Vertex Impress Omega",
+    "price": "400",
+    "qty": "115",
+    "image": "Vertex_Impress_Omega.jpg",
+    "release_date": "2019-03-05",
+    "status": "available",
+    "slug": "vertex-impress-omega"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 18,
+  "fields": {
+    "section": "smartphones",
+    "name": "Vivo V9",
+    "price": "580",
+    "qty": "0",
+    "image": "vivo_v9_1.jpg",
+    "release_date": "2019-03-09",
+    "status": "awaiting delivery",
+    "slug": "vivo-v9"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 19,
+  "fields": {
+    "section": "smartphones",
+    "name": "Xiaomi Shark AGM X2",
+    "price": "700",
+    "qty": "330",
+    "image": "Xiaomi_Shark_AGM-X2.jpg",
+    "release_date": "2018-10-22",
+    "status": "available",
+    "slug": "xiaomi-shark-agm-x2"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 20,
+  "fields": {
+    "section": "miscellaneous",
+    "name": "\u0412\u0435\u0434\u043c\u0435\u0434\u0438\u043a \u0414\u043e\u0431\u0440\u044b\u0439",
+    "price": "0",
+    "qty": "0",
+    "image": "vedmedik.jpg",
+    "release_date": "2015-09-24",
+    "status": "not available",
+    "slug": "vedmedik-dobryj"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 21,
+  "fields": {
+    "section": "cultural",
+    "name": "\u0411\u0430\u043b\u0430\u043b\u0430\u0439\u043a\u0430 \u0430\u0440\u0442\u043e\u0432\u0430\u044f",
+    "price": "15000",
+    "qty": "1",
+    "image": "Balalaika_500px.jpg",
+    "release_date": "2006-10-11",
+    "status": "available",
+    "slug": "balalajka-artovaya"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 22,
+  "fields": {
+    "section": "cultural",
+    "name": "\u0413\u0430\u0440\u043c\u043e\u043d\u044c \u0428\u0443\u0439\u0441\u043a\u0430\u044f",
+    "price": "50000",
+    "qty": "1",
+    "image": "shuyskaya-garmon-pobeda.jpg",
+    "release_date": "2011-05-03",
+    "status": "awaiting delivery",
+    "slug": "garmon-shujskaya"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 23,
+  "fields": {
+    "section": "miscellaneous",
+    "name": "\u0424\u0443\u0444\u0430\u0439\u043a\u0430 \u0422\u0435\u043b\u044c\u043d\u0438\u043a",
+    "price": "4300",
+    "qty": "5",
+    "image": "fufajka.jpg",
+    "release_date": "2018-02-14",
+    "status": "awaiting delivery",
+    "slug": "fufajka-telnik"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 24,
+  "fields": {
+    "section": "miscellaneous",
+    "name": "\u0412\u0430\u0442\u043d\u0438\u043a",
+    "price": "7890",
+    "qty": "0",
+    "image": "vatnik.jpg",
+    "release_date": "2013-08-08",
+    "status": "awaiting delivery",
+    "slug": "vatnik"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 25,
+  "fields": {
+    "section": "miscellaneous",
+    "name": "\u0412\u043e\u0434\u043a\u0430 \u041f\u0440\u043e\u0441\u0442\u0430\u044f",
+    "price": "400",
+    "qty": "490",
+    "image": "vodka_simple.jpg",
+    "release_date": "2019-11-01",
+    "status": "available",
+    "slug": "vodka-prostaya"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 1,
+  "fields": {
+    "publish_date": "2019-11-18T20:50:07.487Z",
+    "product": 4,
+    "name": "\u041a\u043e\u0441\u043c\u043e\u0441",
+    "text": "WOW!",
+    "rating": "5"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 5,
+  "fields": {
+    "publish_date": "2019-11-18T21:24:11.050Z",
+    "product": 17,
+    "name": "\u0411\u0438\u0431\u0438\u0433\u043e\u043d",
+    "text": "\u0423\u0440\u0430!",
+    "rating": "5"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 6,
+  "fields": {
+    "publish_date": "2019-11-18T21:36:45.612Z",
+    "product": 7,
+    "name": "\u041b\u0438\u043c\u043e\u043d\u0434\u043d\u044b\u0439 \u0414\u0436\u043e",
+    "text": "uuuoi",
+    "rating": "3"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 9,
+  "fields": {
+    "publish_date": "2019-11-18T21:48:02.743Z",
+    "product": 2,
+    "name": "\u0414\u0436\u044d\u043a \u0414\u044d\u043d\u0438\u0435\u043b\u0441",
+    "text": "no on no no no on no",
+    "rating": "3"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 10,
+  "fields": {
+    "publish_date": "2019-11-18T21:49:43.669Z",
+    "product": 13,
+    "name": "\u0421\u043e\u043b\u043e\u0432\u0435\u0439-\u0420\u0430\u0437\u0431\u043e\u0439\u043d\u0438\u043a",
+    "text": "\u0424\u044c\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e",
+    "rating": "2"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 11,
+  "fields": {
+    "publish_date": "2019-11-24T10:12:23.857Z",
+    "product": 23,
+    "name": "\u0414\u0436\u044d\u043a \u0414\u044d\u043d\u0438\u0435\u043b\u0441",
+    "text": "\u0423 \u043c\u0430\u0442\u0440\u043e\u0441\u043e\u0432 \u043d\u0435\u0442 \u0432\u043e\u043f\u0440\u043e\u0441\u043e\u0432",
+    "rating": "5"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 12,
+  "fields": {
+    "publish_date": "2019-11-26T07:06:05.566Z",
+    "product": 23,
+    "name": "\u0411\u043e\u0431",
+    "text": "\u0425\u043e\u0440\u043e\u0448\u0430\u044f \u0444\u0443\u0444\u0430\u0439\u043a\u0430!",
+    "rating": "4"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 13,
+  "fields": {
+    "publish_date": "2019-11-26T10:09:36.612Z",
+    "product": 23,
+    "name": "\u0414\u0436\u043e\u043d\u043d\u0438",
+    "text": "\u042d\u0442\u043e \u043f\u0440\u043e\u0441\u0442\u043e \u043f\u0440\u0430\u0437\u0434\u043d\u0438\u043a \u043a\u0430\u043a\u043e\u0439\u0442\u043e!!!! \r\n\u041d\u0430\u0441\u0442\u043e\u044f\u0449\u0438\u0439 \u043a\u0440\u0443\u0442\u043e\u0439 \u0442\u0435\u043b\u044c\u043d\u0438\u043a. \u0424\u0443\u0444\u0430\u0438\u0441\u0442\u044b\u0439 \u0442\u0435\u043b\u044c\u043d\u0438\u043a!",
+    "rating": "5"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 1,
+  "fields": {
+    "product": 8,
+    "model": "50 3G",
+    "cpu": "Spreadtrum SC77",
+    "cpu_cores": "4",
+    "ram": "1",
+    "int_flash": "8",
+    "ext_flash_type": "yes",
+    "ext_flash": "64",
+    "cam": "1 - 8Mp",
+    "gsm_ranges": "GSM 900/1800/1900,",
+    "internet": "3G, WAP, EDGE, GPRS, HSPA+",
+    "pay": "no",
+    "display_type": "Color, TN, Touch",
+    "display_size": "5.00",
+    "nav": "GPS",
+    "os": "Android 7.0",
+    "sim_type": "micro SIM",
+    "sim_cards": "2",
+    "accum_capacity": "2000",
+    "body": "Plastic",
+    "color": "Black",
+    "dimensions": "70.9x143.7x9.5 mm",
+    "weight": "160",
+    "description": "ARCHOS"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 2,
+  "fields": {
+    "product": 14,
+    "model": "Motorola Moto X Style 16GB",
+    "cpu": "Qualcomm MSM899",
+    "cpu_cores": "6",
+    "ram": "3",
+    "int_flash": "16",
+    "ext_flash_type": "yes",
+    "ext_flash": "128",
+    "cam": "1 -21 MP; 2 - 5 MP",
+    "gsm_ranges": "850, 900, 1800, 1900",
+    "internet": "3G, WAP, EDGE, GPRS, HSPA+",
+    "pay": "Google Pay",
+    "display_type": "TFT / 2560x1440 (QHD)",
+    "display_size": "5.70",
+    "nav": "A-GPS",
+    "os": "Android",
+    "sim_type": "nano SIM",
+    "sim_cards": "2",
+    "accum_capacity": "3000",
+    "body": "Plastic",
+    "color": "Black",
+    "dimensions": "76.2x153.9x11.06 mm",
+    "weight": "179",
+    "description": "Hello Moto..."
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 3,
+  "fields": {
+    "product": 9,
+    "model": "Cat S31",
+    "cpu": "Snapdragon 210",
+    "cpu_cores": "4",
+    "ram": "2",
+    "int_flash": "16",
+    "ext_flash_type": "yes",
+    "ext_flash": "128",
+    "cam": "1 - 8 MP; 2 - 2 MP",
+    "gsm_ranges": "850, 900, 1800, 1900",
+    "internet": "2G/3G/4G(LTE)",
+    "pay": "no",
+    "display_type": "TFT /1280x720 (QHD)",
+    "display_size": "4.70",
+    "nav": "GPS",
+    "os": "Android 7.1",
+    "sim_type": "nano SIM",
+    "sim_cards": "2",
+    "accum_capacity": "4000",
+    "body": "Plastic",
+    "color": "Black",
+    "dimensions": "74.0x146.0x13.0 mm",
+    "weight": "200",
+    "description": "\u0414\u043e\u0431\u0440\u043e\u0442\u043d\u044b\u0439 \u043f\u043e\u0445\u043e\u0434\u043d\u044b\u0439 \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d \u0432 \u043f\u044b\u043b\u0435\u0432\u043b\u0430\u0433\u043e\u0437\u0430\u0449\u0438\u0442\u043d\u043e\u043c \u043d\u0430\u0434\u0435\u0436\u043d\u043e\u043c \u043a\u043e\u0440\u043f\u0443\u0441\u0435 \u0438 \u0441 \u0445\u043e\u0440\u043e\u0448\u0435\u0439 \u0430\u0432\u0442\u043e\u043d\u043e\u043c\u043d\u043e\u0441\u0442\u044c\u044e."
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 4,
+  "fields": {
+    "product": 10,
+    "model": "Desire 650",
+    "cpu": "Qualcomm MSM892",
+    "cpu_cores": "4",
+    "ram": "2",
+    "int_flash": "16",
+    "ext_flash_type": "yes",
+    "ext_flash": "2048",
+    "cam": "1 - 13 MP/ 2- 5 MP",
+    "gsm_ranges": "GSM 900/1800/1900, 3G, 4G LTE,",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "yes",
+    "display_type": "HD (1280 \u0445 720)",
+    "display_size": "5.00",
+    "nav": "GPS/\u0413\u043b\u043e\u043d\u0430\u0441\u0441",
+    "os": "Android 6.0",
+    "sim_type": "nano-SIM",
+    "sim_cards": "1",
+    "accum_capacity": "2200",
+    "body": "Plastic",
+    "color": "Black. White",
+    "dimensions": "70.9x146.9x8.4",
+    "weight": "140",
+    "description": "\u041a\u0443\u043f\u0438\u043b HTC?\r\n\u0414\u043e\u0431\u0430\u0432\u043a\u0443 \u043d\u0435 \u043f\u0440\u043e\u0441\u0438!"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 5,
+  "fields": {
+    "product": 11,
+    "model": "Huawei Y5 2019 32",
+    "cpu": "MediaTek Helio",
+    "cpu_cores": "4",
+    "ram": "2",
+    "int_flash": "32",
+    "ext_flash_type": "microSD",
+    "ext_flash": "512",
+    "cam": "1 - 13 MP/ 2- 5 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "no",
+    "display_type": "IPS 1520x720",
+    "display_size": "5.71",
+    "nav": "GPS/A-GPS/\u0413\u043b\u043e\u043d\u0430\u0441\u0441",
+    "os": "Android 9.0",
+    "sim_type": "nano-SIM",
+    "sim_cards": "2",
+    "accum_capacity": "3020",
+    "body": "Plastic, skin",
+    "color": "Black",
+    "dimensions": "70.7x147.1x8.4",
+    "weight": "146",
+    "description": "C\u0442\u0438\u043b\u044c\u043d\u043e\u0435 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e \u0434\u043b\u044f \u043e\u0431\u0449\u0435\u043d\u0438\u044f, \u0440\u0430\u0431\u043e\u0442\u044b \u0438 \u0440\u0430\u0437\u0432\u043b\u0435\u0447\u0435\u043d\u0438\u0439."
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 6,
+  "fields": {
+    "product": 12,
+    "model": "LG K8 LTE",
+    "cpu": "MediaTek MT6735",
+    "cpu_cores": "4",
+    "ram": "1",
+    "int_flash": "16",
+    "ext_flash_type": "MicroSD, MicroSDHC",
+    "ext_flash": "32",
+    "cam": "1 - 8 MP/ 2 - 5 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "no",
+    "display_type": "1280x720 (HD)",
+    "display_size": "5.00",
+    "nav": "GPS/A-GP",
+    "os": "Android 7.0",
+    "sim_type": "nano-SIM",
+    "sim_cards": "1",
+    "accum_capacity": "2125",
+    "body": "Plastic",
+    "color": "Black",
+    "dimensions": "71.5x144.6x8.7",
+    "weight": "140",
+    "description": "\u0421\u041a\u0410\u0416\u0418\u0422\u0415 \"\u041f\u041e\u041a\u0410\" \u041f\u041b\u041e\u0425\u0418\u041c \u0421\u0415\u041b\u0424\u0418"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 7,
+  "fields": {
+    "product": 13,
+    "model": "LG H324 Leon 4",
+    "cpu": "MediaTek MT6582",
+    "cpu_cores": "4",
+    "ram": "4",
+    "int_flash": "32",
+    "ext_flash_type": "microSDHC, microSD",
+    "ext_flash": "768",
+    "cam": "1 - 5 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "no",
+    "display_type": "IPS 854x480",
+    "display_size": "4.50",
+    "nav": "GPS/A-GPS",
+    "os": "Android 5.0",
+    "sim_type": "micro-SIM",
+    "sim_cards": "2",
+    "accum_capacity": "1900",
+    "body": "Plastic",
+    "color": "Black, Gold",
+    "dimensions": "29.9x64.9x10.9",
+    "weight": "135",
+    "description": "\u041f\u0440\u0438\u0432\u043b\u0435\u043a\u0430\u0435\u0442 \u0432\u043d\u0438\u043c\u0430\u043d\u0438\u0435 \u0438 \u0437\u0430\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u043f\u043e\u0432\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u044c\u043d\u0435\u0435 \u043f\u043e\u0437\u043d\u0430\u043a\u043e\u043c\u0438\u0442\u044c\u0441\u044f \u0441 \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043a\u0430\u043c\u0438 \u044d\u0442\u043e\u0433\u043e \u0430\u043f\u043f\u0430\u0440\u0430\u0442\u0430."
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 8,
+  "fields": {
+    "product": 1,
+    "model": "Google Nexus 5",
+    "cpu": "Qualcomm Snapdr",
+    "cpu_cores": "4",
+    "ram": "2",
+    "int_flash": "32",
+    "ext_flash_type": "no",
+    "ext_flash": "0",
+    "cam": "1 - 8 MP/ 2 - 1.3 MP",
+    "gsm_ranges": "850/900/1800/1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "yes",
+    "display_type": "IPS 1920\u00d71080",
+    "display_size": "4.95",
+    "nav": "GPS/A-GPS",
+    "os": "Android 4.4",
+    "sim_type": "micro-SIM",
+    "sim_cards": "1",
+    "accum_capacity": "2300",
+    "body": "Plastic",
+    "color": "Black",
+    "dimensions": "137.84\u00d769.17\u00d78.59",
+    "weight": "130",
+    "description": "\u0427\u0435\u0440\u043d\u044b\u0439 \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d Nexus 5x \u0432\u0435\u0441\u0438\u0442 \u0432\u0441\u0435\u0433\u043e 130 \u0433. \u0438 \u0438\u043c\u0435\u0435\u0442 \u043c\u043e\u0449\u043d\u0443\u044e \"\u043d\u0430\u0447\u0438\u043d\u043a\u0443\"."
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 9,
+  "fields": {
+    "product": 5,
+    "model": "Nokia 8 4GB/64GB",
+    "cpu": "Qualcomm MSM899",
+    "cpu_cores": "8",
+    "ram": "4",
+    "int_flash": "64",
+    "ext_flash_type": "MicroSD, MicroSDHC, MicroSDXC",
+    "ext_flash": "256",
+    "cam": "1 - 13 MP/ 2 - 13 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "no",
+    "display_type": "2560x1440 (QHD)",
+    "display_size": "5.30",
+    "nav": "GPS/A-GPS",
+    "os": "Android 7.1",
+    "sim_type": "nano-SIM",
+    "sim_cards": "2",
+    "accum_capacity": "3090",
+    "body": "Metal",
+    "color": "Black",
+    "dimensions": "151.5\u00d771.3\u00d77.9",
+    "weight": "160",
+    "description": "\u041f\u0435\u0440\u0432\u044b\u0439 \u0442\u0435\u043b\u0435\u0444\u043e\u043d \u0441\u043e \u0432\u0441\u0442\u0440\u043e\u0435\u043d\u043d\u043e\u0439 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u043e\u0439 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0438 \u043e\u0431\u044a\u0435\u043c\u043d\u043e\u0433\u043e 360\u00b0 \u0437\u0432\u0443\u043a\u0430 Nokia OZO, \u043f\u043e\u0437\u0432\u043e\u043b\u044f\u044e\u0449\u0438\u0439 \u0437\u0430\u043f\u0438\u0441\u044b\u0432\u0430\u0442\u044c \u0440\u0435\u0430\u043b\u0438\u0441\u0442\u0438\u0447\u043d\u043e\u0435 \u0432\u0438\u0434\u0435\u043e \u0441 3D \u0437\u0432\u0443\u043a\u043e\u043c \u0438 \u043d\u0430\u0441\u043b\u0430\u0436\u0434\u0430\u0442\u044c\u0441\u044f \u0431\u0435\u0437\u0443\u043a\u043e\u0440\u0438\u0437\u043d\u0435\u043d\u043d\u044b\u043c \u0432\u043e\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0435\u043c."
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 10,
+  "fields": {
+    "product": 3,
+    "model": "Google Pixel 2",
+    "cpu": "Qualc MSM8998",
+    "cpu_cores": "8",
+    "ram": "4",
+    "int_flash": "128",
+    "ext_flash_type": "no",
+    "ext_flash": "0",
+    "cam": "1 - 13 MP/ 2 - 8 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "yes",
+    "display_type": "Amoled 1080 x 1920",
+    "display_size": "5.00",
+    "nav": "GPS/A-GPS/\u0413\u043b\u043e\u043d\u0430\u0441\u0441",
+    "os": "Android 9.0",
+    "sim_type": "nano-SIM",
+    "sim_cards": "1",
+    "accum_capacity": "2700",
+    "body": "Aluminum alloy",
+    "color": "Black. White, Blue",
+    "dimensions": "145.7\u00d769.7\u00d77.8",
+    "weight": "143",
+    "description": "\u0422\u0435\u043b\u0435\u0444\u043e\u043d \u0431\u0435\u0437 \u043f\u0440\u043e\u0431\u043b\u0435\u043c."
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 11,
+  "fields": {
+    "product": 15,
+    "model": "Runbo F1",
+    "cpu": "MediaTek MT6735",
+    "cpu_cores": "4",
+    "ram": "2",
+    "int_flash": "16",
+    "ext_flash_type": "microSDXC, microSDHC, microSD",
+    "ext_flash": "128",
+    "cam": "1 - 13 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "no",
+    "display_type": "IPS 1920\u00d71080",
+    "display_size": "5.50",
+    "nav": "GPS/A-GPS/\u0413\u043b\u043e\u043d\u0430\u0441\u0441",
+    "os": "Android 5.1",
+    "sim_type": "micro-SIM",
+    "sim_cards": "2",
+    "accum_capacity": "5000",
+    "body": "IP68",
+    "color": "Black, Gold",
+    "dimensions": "75x155x25",
+    "weight": "326",
+    "description": "\u0421\u0443\u0440\u043e\u0432\u044b\u0439 \u043a\u0440\u043e\u0441\u0441 \u0444\u0438\u0442!"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 12,
+  "fields": {
+    "product": 7,
+    "model": "Galaxy S8",
+    "cpu": "Exynos 9 Octa",
+    "cpu_cores": "8",
+    "ram": "4",
+    "int_flash": "64",
+    "ext_flash_type": "microSD",
+    "ext_flash": "256",
+    "cam": "1 - 12 MP/ 2 - 8 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "yes",
+    "display_type": "Amoled 1440 x 2960",
+    "display_size": "5.80",
+    "nav": "GPS/A-GPS/\u0413\u043b\u043e\u043d\u0430\u0441\u0441",
+    "os": "Android 7.0",
+    "sim_type": "nano-SIM",
+    "sim_cards": "2",
+    "accum_capacity": "3000",
+    "body": "IP68",
+    "color": "Black. White, Gold, Green",
+    "dimensions": "148.0\u00d768.0\u00d78.0",
+    "weight": "155",
+    "description": "\u0427\u0435\u0440\u043d\u044b\u0439 \u0431\u0440\u0438\u043b\u043b\u0438\u0430\u043d\u0442!"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 13,
+  "fields": {
+    "product": 6,
+    "model": "Galaxy",
+    "cpu": "Cortex-A9",
+    "cpu_cores": "2",
+    "ram": "1",
+    "int_flash": "16",
+    "ext_flash_type": "microSD",
+    "ext_flash": "32",
+    "cam": "1 - 8 MP/ 2 - 2 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA, EDGE, GPRS",
+    "pay": "no",
+    "display_type": "Amoled 480 x 800",
+    "display_size": "4.30",
+    "nav": "GPS/A-GPS",
+    "os": "Android 2.3.4",
+    "sim_type": "Mini-SIM",
+    "sim_cards": "1",
+    "accum_capacity": "1650",
+    "body": "Plastic",
+    "color": "Black, White, Pink",
+    "dimensions": "25.3 \u0425 66.1 \u0425 8.5",
+    "weight": "116",
+    "description": "\u041a\u043e\u0440\u0435\u0439\u0441\u043a\u043e\u0435 \u0447\u0443\u0434\u043e"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 14,
+  "fields": {
+    "product": 17,
+    "model": "VERTEX Impress Omega",
+    "cpu": "MediaTek MT6580",
+    "cpu_cores": "4",
+    "ram": "1",
+    "int_flash": "8",
+    "ext_flash_type": "yes",
+    "ext_flash": "32",
+    "cam": "1 - 8 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA, EDGE, GPRS",
+    "pay": "no",
+    "display_type": "IPS 960x540",
+    "display_size": "5.50",
+    "nav": "GPS/A-GPS",
+    "os": "Android 5.1",
+    "sim_type": "micro-SIM",
+    "sim_cards": "2",
+    "accum_capacity": "2100",
+    "body": "Plastic",
+    "color": "Black",
+    "dimensions": "77x153x7.9",
+    "weight": "163",
+    "description": "Vertex \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u044e\u0442 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u044b\u0435 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0438 \u0438 \"\u0444\u0438\u0448\u043a\u0438\",  \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u043d\u044b\u0435 \u0434\u043b\u044f \u0444\u043b\u0430\u0433\u043c\u0430\u043d\u043e\u0432"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 15,
+  "fields": {
+    "product": 18,
+    "model": "Vivo V9",
+    "cpu": "Snapdragon 626",
+    "cpu_cores": "8",
+    "ram": "4",
+    "int_flash": "64",
+    "ext_flash_type": "microSD",
+    "ext_flash": "256",
+    "cam": "1 - 16MP + 5MP/ 2- 24 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "no",
+    "display_type": "LTPS 2280\u04451080",
+    "display_size": "6.30",
+    "nav": "GPS/\u0413\u043b\u043e\u043d\u0430\u0441\u0441/Beidou",
+    "os": "Android 8.1",
+    "sim_type": "nano-SIM",
+    "sim_cards": "2",
+    "accum_capacity": "3260",
+    "body": "Plastic",
+    "color": "Black. White, Blue",
+    "dimensions": "154.81\u00d775.03\u00d77.89",
+    "weight": "150",
+    "description": "6,3-\u0434\u044e\u0439\u043c\u043e\u0432\u044b\u0439 \u0434\u0438\u0441\u043f\u043b\u0435\u0439 \u0441 \u043c\u043e\u0434\u043d\u043e\u0439 \u0438 \u0443\u0437\u043d\u0430\u0432\u0430\u0435\u043c\u043e\u0439 \u00ab\u0447\u0451\u043b\u043a\u043e\u0439\u00bb"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 16,
+  "fields": {
+    "product": 19,
+    "model": "Xiaomi Black Shark 2",
+    "cpu": "Snapdragon 855",
+    "cpu_cores": "8",
+    "ram": "12",
+    "int_flash": "256",
+    "ext_flash_type": "no",
+    "ext_flash": "0",
+    "cam": "1 - 48MP + 12MP/ 2- 20 MP",
+    "gsm_ranges": "GSM 900/1800/1900, 3G, 4G LTE,",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "no",
+    "display_type": "AMOLED, 16M",
+    "display_size": "6.39",
+    "nav": "GPS/\u0413\u043b\u043e\u043d\u0430\u0441\u0441/BDS",
+    "os": "Android 9.0",
+    "sim_type": "nano-SIM",
+    "sim_cards": "2",
+    "accum_capacity": "4000",
+    "body": "Plastic",
+    "color": "Black. Silver, Blue",
+    "dimensions": "163.6 x 75 x 8.8",
+    "weight": "205",
+    "description": "\u041f\u0440\u043e\u0434\u0432\u0438\u043d\u0443\u0442\u044b\u0439 \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d, \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u044c\u043d\u043e \u0441\u043e\u0437\u0434\u0430\u043d\u043d\u044b\u0439 \u0434\u043b\u044f \u0433\u0435\u0439\u043c\u0435\u0440\u043e\u0432"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 17,
+  "fields": {
+    "product": 2,
+    "model": "Apple iPhone 7 32GB",
+    "cpu": "A10 Fusion",
+    "cpu_cores": "4",
+    "ram": "2",
+    "int_flash": "32",
+    "ext_flash_type": "no",
+    "ext_flash": "0",
+    "cam": "1 - 12 MP",
+    "gsm_ranges": "GSM 900/1800/1900, 3G, 4G LTE,",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "yes",
+    "display_type": "IPS 1334x750",
+    "display_size": "4.70",
+    "nav": "GPS/A-GPS/\u0413\u043b\u043e\u043d\u0430\u0441\u0441",
+    "os": "iOS 13",
+    "sim_type": "nano-SIM",
+    "sim_cards": "1",
+    "accum_capacity": "1960",
+    "body": "IP68 Metall",
+    "color": "Black, White, Pink",
+    "dimensions": "138.3\u00d768.7\u00d77.1",
+    "weight": "138",
+    "description": "\u042f\u0431\u043b\u043e\u0447\u043a\u043e"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 18,
+  "fields": {
+    "product": 4,
+    "model": "Apple iPhone X 64GB",
+    "cpu": "Apple A11",
+    "cpu_cores": "6",
+    "ram": "3",
+    "int_flash": "256",
+    "ext_flash_type": "no",
+    "ext_flash": "0",
+    "cam": "1 - 12MP + 12MP/ 2- 7 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "yes",
+    "display_type": "OLED 2436\u00d71125",
+    "display_size": "5.80",
+    "nav": "GPS/A-GPS/\u0413\u043b\u043e\u043d\u0430\u0441\u0441",
+    "os": "iOS 13",
+    "sim_type": "nano-SIM",
+    "sim_cards": "1",
+    "accum_capacity": "2716",
+    "body": "IP68 Metall, Glass",
+    "color": "Black, White, Pink",
+    "dimensions": "144.0\u00d77.1\u00d77.7",
+    "weight": "174",
+    "description": "\u0411\u043e\u043b\u044c\u0448\u043e\u0435 \u042f\u0431\u043b\u043e\u043a\u043e"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 19,
+  "fields": {
+    "product": 16,
+    "model": "TM-5201",
+    "cpu": "MT6737",
+    "cpu_cores": "4",
+    "ram": "1",
+    "int_flash": "8",
+    "ext_flash_type": "microSD, microSDHC",
+    "ext_flash": "32",
+    "cam": "1 - 8 MP/ 2- 5 MP",
+    "gsm_ranges": "GSM 900, 1800, 850, 1900",
+    "internet": "HSPA+, HSUPA, EDGE, E-GPRS",
+    "pay": "no",
+    "display_type": "IPS 1280x720",
+    "display_size": "5.20",
+    "nav": "GPS/A-GPS",
+    "os": "Android 7.0",
+    "sim_type": "nano-SIM",
+    "sim_cards": "1",
+    "accum_capacity": "3700",
+    "body": "IP68",
+    "color": "Black",
+    "dimensions": "148x76.3x12",
+    "weight": "207",
+    "description": "\u041d\u0430\u0434\u0435\u0436\u043d\u044b\u0439, \u044d\u043b\u0435\u0433\u0430\u043d\u0442\u043d\u044b\u0439, \u0441\u043e\u043b\u0438\u0434\u043d\u044b\u0439"
+  }
+},
+{
+  "model": "app_eshop.cultural",
+  "pk": 1,
+  "fields": {
+    "product": 22,
+    "symbol": "\u0420\u0443\u0441\u0441\u043a\u0430\u044f \u0438 \u0413\u0435\u0440\u043c\u0430\u043d\u0441\u043a\u044f \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u044b",
+    "rarity": "\u0421\u0421\u0421\u0420 1935 \u0433.",
+    "description": "\u042f \u043f\u043e\u0435\u0434\u0443 \u0432 \u0433\u043e\u0440\u043e\u0434 \u0428\u0443\u044e\r\n\u0418 \u043a\u0443\u043f\u043b\u044e \u0433\u0430\u0440\u043c\u043e\u043d\u044c \u0431\u043e\u043b\u044c\u0448\u0443\u044e,\r\n\u041a\u0430\u043a \u043f\u0440\u0438\u0435\u0434\u0443 \u043d\u0430 \u0441\u0435\u043b\u043e\r\n\u0417\u0430\u0438\u0433\u0440\u0430\u044e \u0432\u0435\u0441\u0435\u043b\u043e."
+  }
+},
+{
+  "model": "app_eshop.cultural",
+  "pk": 2,
+  "fields": {
+    "product": 21,
+    "symbol": "\u0420\u0443\u0441\u0441\u043a\u0430\u044f \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430",
+    "rarity": "\u0420\u0430\u0440\u0438\u0442\u0435\u0442",
+    "description": "\u0421\u0430\u043c\u044b\u0439 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u044b\u0439 \u043d\u0430\u0440\u043e\u0434\u043d\u044b\u0439 \u043c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442"
+  }
+},
+{
+  "model": "app_eshop.miscellaneous",
+  "pk": 1,
+  "fields": {
+    "product": 23,
+    "description": "\u0424\u0443\u0444\u0430\u0439\u043a\u0430 (\u043d\u0438\u0436\u043d\u044f\u044f \u0440\u0443\u0431\u0430\u0448\u043a\u0430) - \u0432 \u043e\u0441\u043d\u043e\u0432\u043d\u043e\u043c \u0442\u0435\u043f\u043b\u043e\u0435 \u043d\u0438\u0436\u043d\u0435\u0435 \u0431\u0435\u043b\u044c\u0435, \u043f\u043e\u043a\u0440\u044b\u0432\u0430\u044e\u0449\u0435\u0435 \u0442\u0443\u043b\u043e\u0432\u0438\u0449\u0435 \u0438 \u0440\u0443\u043a\u0438 (\u044d\u0442\u043e \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u044d\u0442\u043e\u0433\u043e \u0441\u043b\u043e\u0432\u0430 \u0441\u0430\u043c\u043e\u0435 \u0434\u0440\u0435\u0432\u043d\u0435\u0435, \u0432\u043e\u0441\u0445\u043e\u0434\u0438\u0442 \u043a\u0430\u043a \u043c\u0438\u043d\u0438\u043c\u0443\u043c \u043a XVIII \u0432\u0435\u043a\u0443, \u043d\u0435 \u043f\u043e\u0437\u0434\u043d\u0435\u0435 1765 \u0433\u043e\u0434\u0430)."
+  }
+},
+{
+  "model": "app_eshop.miscellaneous",
+  "pk": 2,
+  "fields": {
+    "product": 24,
+    "description": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f \u043f\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u044f \u0432\u0430\u0442\u043d\u0438\u043a\u0430 \u043d\u0430\u0441\u0447\u0438\u0442\u044b\u0432\u0430\u0435\u0442 \u0443\u0436\u0435 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u043e \u0432\u0435\u043a\u043e\u0432. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u043d\u0435\u0447\u0442\u043e \u043f\u043e\u0434\u043e\u0431\u043d\u043e\u0435 \u0441\u0442\u0435\u0433\u0430\u043d\u043e\u043c\u0443 \u0432\u0430\u0442\u043d\u0438\u043a\u0443 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043e\u0432\u0430\u043b\u043e \u0435\u0449\u0435 \u0432 11 \u0432\u0435\u043a\u0435 \u2013 \u044d\u0442\u043e \u043a\u0430\u0431\u0430\u0434\u0438\u043e\u043d, \u0438\u043b\u0438 \u00ab\u043b\u044c\u043d\u044f\u043d\u043e\u0439 \u043f\u0430\u043d\u0446\u0438\u0440\u044c\u00bb, \u043a\u0443\u0440\u0442\u043a\u0430 \u0438\u0437 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u0430 \u043f\u0440\u043e\u0441\u0442\u0435\u0433\u0430\u043d\u043d\u044b\u0445 \u0441\u043b\u043e\u0435\u0432 \u0432\u043e\u0439\u043b\u043e\u043a\u0430 \u0438\u043b\u0438 \u043b\u044c\u043d\u0430."
+  }
+},
+{
+  "model": "app_eshop.miscellaneous",
+  "pk": 3,
+  "fields": {
+    "product": 25,
+    "description": "\u0412\u043e\u0434\u043a\u0430 \u0432 \u0441\u0442\u0430\u043a\u0430\u043d\u0435,\r\n\u0412 \u0431\u043e\u0440\u0449\u0435 \u043a\u0430\u043f\u0443\u0441\u0442\u0430.\r\n\u041f\u043b\u0435\u0434 \u043d\u0430 \u0434\u0438\u0432\u0430\u043d\u0435,\r\n\u041d\u0430 \u0441\u0435\u0440\u0434\u0446\u0435 \u043f\u0443\u0441\u0442\u043e.\r\n..."
+  }
+},
+{
+  "model": "app_eshop.miscellaneous",
+  "pk": 4,
+  "fields": {
+    "product": 20,
+    "description": "\u0411\u043e\u043b\u044c\u0448\u043e\u0439 \u043f\u043e\u0441\u0442\u0435\u0440 300 x 200 (\u0441\u043c)"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$sh6yDEV1YD6w$7PUx2YWVKWCimsx/8Rso5htZLvUt4CqceKbk2t6HMcI=",
+    "last_login": "2019-11-26T11:35:48.508Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.org",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-11-26T06:38:38.823Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

@@ -30,7 +30,7 @@ def user_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    return redirect('index')
+                    return redirect('main')
                 else:
                     return render(request, 'app_users/login.html',  {'message': 'user_disabled'})
             else:
@@ -42,7 +42,7 @@ def user_login(request):
 
 def user_logout(request):
     logout(request)
-    return redirect('index')
+    return redirect('main')
 
 
 # @login_required(login_url="/")

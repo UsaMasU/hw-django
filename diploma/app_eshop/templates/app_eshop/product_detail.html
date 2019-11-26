@@ -1,5 +1,6 @@
 {% extends "_base.html" %}
 {% load filters %}
+{% load app_tags %}
 {% load static %}
 
 {% block content %}
@@ -20,8 +21,7 @@
 
           <img src="/static/img/{{product.image}}" width="120">
 
-          <p>Неплохой телефон</p>
-          <!--form method="post" action="{% url 'phone' product.slug %}"-->
+          <p>{{detailed.description}}</p>
           <form method="post" action="{% url name_url product.slug %}">
             {% csrf_token %}
             <input type="hidden" name="merchandise_id" value="1">
@@ -31,7 +31,6 @@
         </div>
       </div>
       <hr>
-
       {% if product.section == 'smartphones' %}
         {% include 'app_eshop/phone_detail.html' with phone=product detailed=detailed %}
       {% elif product.section == 'cultural' %}
@@ -39,23 +38,13 @@
       {% elif product.section == 'miscellaneous' %}
         {% include 'app_eshop/miscellaneous_detail.html' with phone=product detailed=detailed %}
       {% endif %}
-
       <hr>
-  <!--div>
-      {% for col in columns %}
-      <div class="col-md-{{ col.width }}">
-        {{ row|get_item:col.name }}
-      </div>
-      {% endfor %}
-  </div-->
-      ★★★★★ <span>Вася</span>
-      <p> Хороший отзыв</p>
-
-      ★★ <span>Петя</span>
-      <p> Плохой отзыв</p>
-
+      {% for review in reviews %}
+          {% get_stars review.rating as stars %}
+          {{ stars }} <span>{{ review.name }}</span>
+          <p style="width:30%">{{ review.text }}</p>
+      {%endfor%}
       <hr>
-
       <div class="row">
         <div class="col-lg-6 col-md-8 col-sm-12">
           <h4>Оставте отзыв:</h4>
@@ -66,47 +55,6 @@
                 <!--input type="submit" value="Отправить отзыв"/-->
                 <button type="submit" class="btn btn-primary">Оставить</button>
             </form>
-
-          <!--form action="" method="post">
-            {% csrf_token %}
-            <div class="form-group">
-              <label for="name">Имя</label>
-              <input type="text" class="form-control" id="name" aria-describedby="nameHelp"
-                     placeholder="Представтесь" name="name" data-cip-id="name">
-            </div>
-            <div class="form-group">
-              <label for="content">Содержание</label>
-              <textarea class="form-control" id="content"
-                        placeholder="Содержание" name="description"></textarea>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="mark" id="mark1" value="1">
-              <label class="form-check-label" for="mark1">1</label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="mark" id="mark2" value="2">
-              <label class="form-check-label" for="mark2">2</label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="mark" id="mark3" value="3">
-              <label class="form-check-label" for="mark3">3</label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="mark" id="mark4" value="4">
-              <label class="form-check-label" for="mark4">4</label>
-            </div>
-
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="mark" id="mark5" value="5">
-              <label class="form-check-label" for="mark5">5</label>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Оставить</button>
-          </form-->
         </div>
       </div>
 

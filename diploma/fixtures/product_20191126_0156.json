@@ -1,0 +1,615 @@
+[
+{
+  "model": "app_eshop.product",
+  "pk": 1,
+  "fields": {
+    "section": "smartphones",
+    "name": "Nexus 5x",
+    "price": "500",
+    "qty": "100",
+    "image": "nexus5x.jpg",
+    "release_date": "2019-07-04",
+    "status": "available",
+    "slug": "nexus-5x"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 2,
+  "fields": {
+    "section": "smartphones",
+    "name": "iPhone 7",
+    "price": "1000",
+    "qty": "652",
+    "image": "iphone7.jpg",
+    "release_date": "2019-04-11",
+    "status": "available",
+    "slug": "iphone-7"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 3,
+  "fields": {
+    "section": "smartphones",
+    "name": "Pixel 2",
+    "price": "650",
+    "qty": "532",
+    "image": "pixel2.jpg",
+    "release_date": "2019-03-08",
+    "status": "available",
+    "slug": "pixel-2"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 4,
+  "fields": {
+    "section": "smartphones",
+    "name": "iPhone X",
+    "price": "1500",
+    "qty": "1",
+    "image": "iphone-x.jpg",
+    "release_date": "2019-10-01",
+    "status": "awaiting delivery",
+    "slug": "iphone-x"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 5,
+  "fields": {
+    "section": "smartphones",
+    "name": "Nokia 8",
+    "price": "250",
+    "qty": "0",
+    "image": "nokia_8.jpg",
+    "release_date": "2019-01-01",
+    "status": "not available",
+    "slug": "nokia-8"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 6,
+  "fields": {
+    "section": "smartphones",
+    "name": "Samsung Galaxy Edge 2",
+    "price": "769",
+    "qty": "0",
+    "image": "samsung-galaxy-edge-2.jpg",
+    "release_date": "2019-10-03",
+    "status": "awaiting delivery",
+    "slug": "samsung-galaxy-edge-2"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 7,
+  "fields": {
+    "section": "smartphones",
+    "name": "Samsung 8",
+    "price": "899",
+    "qty": "25",
+    "image": "samsungs8.jpg",
+    "release_date": "2019-08-23",
+    "status": "awaiting delivery",
+    "slug": "samsung-8"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 8,
+  "fields": {
+    "section": "smartphones",
+    "name": "Archos Access 50",
+    "price": "150",
+    "qty": "300",
+    "image": "archos_access_50.jpg",
+    "release_date": "2018-11-09",
+    "status": "available",
+    "slug": "archos-access-50"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 9,
+  "fields": {
+    "section": "smartphones",
+    "name": "Caterpillar S31",
+    "price": "439",
+    "qty": "540",
+    "image": "caterpillar_s31.jpg",
+    "release_date": "2018-08-08",
+    "status": "available",
+    "slug": "caterpillar-s31"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 10,
+  "fields": {
+    "section": "smartphones",
+    "name": "HTC Desire 650",
+    "price": "260",
+    "qty": "0",
+    "image": "HTC_Desire_650.jpg",
+    "release_date": "2016-11-02",
+    "status": "discontinued",
+    "slug": "htc-desire-650"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 11,
+  "fields": {
+    "section": "smartphones",
+    "name": "Huawei Y5",
+    "price": "321",
+    "qty": "0",
+    "image": "huawei_y5.jpg",
+    "release_date": "2017-05-05",
+    "status": "discontinued",
+    "slug": "huawei-y5"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 12,
+  "fields": {
+    "section": "smartphones",
+    "name": "LG K8",
+    "price": "357",
+    "qty": "220",
+    "image": "LG_k8.jpg",
+    "release_date": "2017-11-09",
+    "status": "available",
+    "slug": "lg-k8"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 13,
+  "fields": {
+    "section": "smartphones",
+    "name": "LG Leon H324",
+    "price": "110",
+    "qty": "010",
+    "image": "LG_leon_H324.jpg",
+    "release_date": "2017-08-23",
+    "status": "not available",
+    "slug": "lg-leon-h324"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 14,
+  "fields": {
+    "section": "smartphones",
+    "name": "Motorola Moto X",
+    "price": "390",
+    "qty": "150",
+    "image": "Motorola_moto_x_style.jpg",
+    "release_date": "2017-11-11",
+    "status": "available",
+    "slug": "motorola-moto-x"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 15,
+  "fields": {
+    "section": "smartphones",
+    "name": "Runbo",
+    "price": "300",
+    "qty": "0",
+    "image": "Runbo_F2.jpg",
+    "release_date": "2018-11-17",
+    "status": "awaiting delivery",
+    "slug": "runbo"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 16,
+  "fields": {
+    "section": "smartphones",
+    "name": "teXet ROCK TM-5201",
+    "price": "279",
+    "qty": "0",
+    "image": "teXet_ROCK_TM-5201.jpg",
+    "release_date": "2018-07-11",
+    "status": "awaiting delivery",
+    "slug": "texet-rock-tm-5201"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 17,
+  "fields": {
+    "section": "smartphones",
+    "name": "Vertex Impress Omega",
+    "price": "400",
+    "qty": "115",
+    "image": "Vertex_Impress_Omega.jpg",
+    "release_date": "2019-03-05",
+    "status": "available",
+    "slug": "vertex-impress-omega"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 18,
+  "fields": {
+    "section": "smartphones",
+    "name": "Vivo V9",
+    "price": "580",
+    "qty": "0",
+    "image": "vivo_v9_1.jpg",
+    "release_date": "2019-03-09",
+    "status": "awaiting delivery",
+    "slug": "vivo-v9"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 19,
+  "fields": {
+    "section": "smartphones",
+    "name": "Xiaomi Shark AGM X2",
+    "price": "700",
+    "qty": "330",
+    "image": "Xiaomi_Shark_AGM-X2.jpg",
+    "release_date": "2018-10-22",
+    "status": "available",
+    "slug": "xiaomi-shark-agm-x2"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 20,
+  "fields": {
+    "section": "miscellaneous",
+    "name": "\u0412\u0435\u0434\u043c\u0435\u0434\u0438\u043a \u0414\u043e\u0431\u0440\u044b\u0439",
+    "price": "0",
+    "qty": "0",
+    "image": "vedmedik.jpg",
+    "release_date": "2015-09-24",
+    "status": "not available",
+    "slug": "vedmedik-dobryj"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 21,
+  "fields": {
+    "section": "cultural",
+    "name": "\u0411\u0430\u043b\u0430\u043b\u0430\u0439\u043a\u0430 \u0430\u0440\u0442\u043e\u0432\u0430\u044f",
+    "price": "15000",
+    "qty": "1",
+    "image": "Balalaika_500px.jpg",
+    "release_date": "2006-10-11",
+    "status": "available",
+    "slug": "balalajka-artovaya"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 22,
+  "fields": {
+    "section": "cultural",
+    "name": "\u0413\u0430\u0440\u043c\u043e\u043d\u044c \u0428\u0443\u0439\u0441\u043a\u0430\u044f",
+    "price": "50000",
+    "qty": "1",
+    "image": "shuyskaya-garmon-pobeda.jpg",
+    "release_date": "2011-05-03",
+    "status": "awaiting delivery",
+    "slug": "garmon-shujskaya"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 23,
+  "fields": {
+    "section": "miscellaneous",
+    "name": "\u0424\u0443\u0444\u0430\u0439\u043a\u0430 \u0422\u0435\u043b\u044c\u043d\u0438\u043a",
+    "price": "4300",
+    "qty": "5",
+    "image": "fufajka.jpg",
+    "release_date": "2018-02-14",
+    "status": "awaiting delivery",
+    "slug": "fufajka-telnik"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 24,
+  "fields": {
+    "section": "miscellaneous",
+    "name": "\u0412\u0430\u0442\u043d\u0438\u043a",
+    "price": "7890",
+    "qty": "0",
+    "image": "vatnik.jpg",
+    "release_date": "2013-08-08",
+    "status": "awaiting delivery",
+    "slug": "vatnik"
+  }
+},
+{
+  "model": "app_eshop.product",
+  "pk": 25,
+  "fields": {
+    "section": "miscellaneous",
+    "name": "\u0412\u043e\u0434\u043a\u0430 \u041f\u0440\u043e\u0441\u0442\u0430\u044f",
+    "price": "400",
+    "qty": "490",
+    "image": "vodka_simple.jpg",
+    "release_date": "2019-11-01",
+    "status": "available",
+    "slug": "vodka-prostaya"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 1,
+  "fields": {
+    "publish_date": "2019-11-18T20:50:07.487Z",
+    "product": 4,
+    "name": "\u041a\u043e\u0441\u043c\u043e\u0441",
+    "text": "WOW!",
+    "rating": "\u2605\u2605\u2605\u2605\u2605"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 2,
+  "fields": {
+    "publish_date": "2019-11-18T20:57:29.549Z",
+    "product": 16,
+    "name": "<input type=\"text\" name=\"name\" value=\"\u041b\u0438\u043c\u043e\u043d\u0434\u043d\u044b\u0439 \u0414\u0436\u043e\" required id=\"id_name\" />",
+    "text": "<textarea name=\"text\" cols=\"40\" rows=\"10\" required id=\"id_text\">\nAlloha</textarea>",
+    "rating": "<ul id=\"id_rating\">\n    <li><label for=\"id_rating_0\"><input type=\"radio\" name=\"rating\" value=\"1\" required id=\"id_rating_0\" />\n \u2605</label>\n\n</li>\n    <li><label for=\"id_rating_1\"><input type=\"radio\" name=\"rating\" value=\"2\" required id=\"id_rating_1\" />\n \u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_2\"><input type=\"radio\" name=\"rating\" value=\"3\" required id=\"id_rating_2\" checked />\n \u2605\u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_3\"><input type=\"radio\" name=\"rating\" value=\"4\" required id=\"id_rating_3\" />\n \u2605\u2605\u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_4\"><input type=\"radio\" name=\"rating\" value=\"5\" required id=\"id_rating_4\" />\n \u2605\u2605\u2605\u2605\u2605</label>\n\n</li>\n</ul>"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 3,
+  "fields": {
+    "publish_date": "2019-11-18T21:16:06.643Z",
+    "product": 11,
+    "name": "<input type=\"text\" name=\"name\" value=\"\u0421\u043e\u043b\u043e\u0432\u0435\u0439-\u0420\u0430\u0437\u0431\u043e\u0439\u043d\u0438\u043a\" required id=\"id_name\" />",
+    "text": "<textarea name=\"text\" cols=\"40\" rows=\"10\" required id=\"id_text\">\nMy</textarea>",
+    "rating": "<ul id=\"id_rating\">\n    <li><label for=\"id_rating_0\"><input type=\"radio\" name=\"rating\" value=\"1\" required id=\"id_rating_0\" />\n \u2605</label>\n\n</li>\n    <li><label for=\"id_rating_1\"><input type=\"radio\" name=\"rating\" value=\"2\" required id=\"id_rating_1\" />\n \u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_2\"><input type=\"radio\" name=\"rating\" value=\"3\" required id=\"id_rating_2\" />\n \u2605\u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_3\"><input type=\"radio\" name=\"rating\" value=\"4\" required id=\"id_rating_3\" checked />\n \u2605\u2605\u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_4\"><input type=\"radio\" name=\"rating\" value=\"5\" required id=\"id_rating_4\" />\n \u2605\u2605\u2605\u2605\u2605</label>\n\n</li>\n</ul>"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 4,
+  "fields": {
+    "publish_date": "2019-11-18T21:17:46.908Z",
+    "product": 11,
+    "name": "<input type=\"text\" name=\"name\" value=\"\u041b\u0438\u043c\u043e\u043d\u0434\u043d\u044b\u0439 \u0414\u0436\u043e\" required id=\"id_name\" />",
+    "text": "<textarea name=\"text\" cols=\"40\" rows=\"10\" required id=\"id_text\">\ngggf</textarea>",
+    "rating": "<ul id=\"id_rating\">\n    <li><label for=\"id_rating_0\"><input type=\"radio\" name=\"rating\" value=\"1\" required id=\"id_rating_0\" />\n \u2605</label>\n\n</li>\n    <li><label for=\"id_rating_1\"><input type=\"radio\" name=\"rating\" value=\"2\" required id=\"id_rating_1\" />\n \u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_2\"><input type=\"radio\" name=\"rating\" value=\"3\" required id=\"id_rating_2\" />\n \u2605\u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_3\"><input type=\"radio\" name=\"rating\" value=\"4\" required id=\"id_rating_3\" checked />\n \u2605\u2605\u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_4\"><input type=\"radio\" name=\"rating\" value=\"5\" required id=\"id_rating_4\" />\n \u2605\u2605\u2605\u2605\u2605</label>\n\n</li>\n</ul>"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 5,
+  "fields": {
+    "publish_date": "2019-11-18T21:24:11.050Z",
+    "product": 17,
+    "name": "\u0411\u0438\u0431\u0438\u0433\u043e\u043d",
+    "text": "\u0423\u0440\u0430!",
+    "rating": "5"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 6,
+  "fields": {
+    "publish_date": "2019-11-18T21:36:45.612Z",
+    "product": 7,
+    "name": "\u041b\u0438\u043c\u043e\u043d\u0434\u043d\u044b\u0439 \u0414\u0436\u043e",
+    "text": "uuuoi",
+    "rating": "3"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 7,
+  "fields": {
+    "publish_date": "2019-11-18T21:38:23.477Z",
+    "product": 19,
+    "name": "<input type=\"text\" name=\"name\" value=\"\u0414\u043e\u043a\u0442\u043e\u0440 \u0410\u0439\u0431\u043e\u043b\u0438\u0442\" required id=\"id_name\" />",
+    "text": "<textarea name=\"text\" cols=\"40\" rows=\"10\" required id=\"id_text\">\n\u0430\u043d\u0430\u043b\u044c\u0433\u0438\u043d\u0443!</textarea>",
+    "rating": "<ul id=\"id_rating\">\n    <li><label for=\"id_rating_0\"><input type=\"radio\" name=\"rating\" value=\"1\" required id=\"id_rating_0\" />\n \u2605</label>\n\n</li>\n    <li><label for=\"id_rating_1\"><input type=\"radio\" name=\"rating\" value=\"2\" required id=\"id_rating_1\" />\n \u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_2\"><input type=\"radio\" name=\"rating\" value=\"3\" required id=\"id_rating_2\" />\n \u2605\u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_3\"><input type=\"radio\" name=\"rating\" value=\"4\" required id=\"id_rating_3\" checked />\n \u2605\u2605\u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_4\"><input type=\"radio\" name=\"rating\" value=\"5\" required id=\"id_rating_4\" />\n \u2605\u2605\u2605\u2605\u2605</label>\n\n</li>\n</ul>"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 8,
+  "fields": {
+    "publish_date": "2019-11-18T21:46:02.171Z",
+    "product": 7,
+    "name": "<input type=\"text\" name=\"name\" value=\"\u041b\u0438\u043c\u043e\u043d\u0434\u043d\u044b\u0439 \u0414\u0436\u043e\" required id=\"id_name\" />",
+    "text": "<textarea name=\"text\" cols=\"40\" rows=\"10\" required id=\"id_text\">\nGoooood</textarea>",
+    "rating": "<ul id=\"id_rating\">\n    <li><label for=\"id_rating_0\"><input type=\"radio\" name=\"rating\" value=\"1\" required id=\"id_rating_0\" />\n \u2605</label>\n\n</li>\n    <li><label for=\"id_rating_1\"><input type=\"radio\" name=\"rating\" value=\"2\" required id=\"id_rating_1\" />\n \u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_2\"><input type=\"radio\" name=\"rating\" value=\"3\" required id=\"id_rating_2\" />\n \u2605\u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_3\"><input type=\"radio\" name=\"rating\" value=\"4\" required id=\"id_rating_3\" checked />\n \u2605\u2605\u2605\u2605</label>\n\n</li>\n    <li><label for=\"id_rating_4\"><input type=\"radio\" name=\"rating\" value=\"5\" required id=\"id_rating_4\" />\n \u2605\u2605\u2605\u2605\u2605</label>\n\n</li>\n</ul>"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 9,
+  "fields": {
+    "publish_date": "2019-11-18T21:48:02.743Z",
+    "product": 2,
+    "name": "\u0414\u0436\u044d\u043a \u0414\u044d\u043d\u0438\u0435\u043b\u0441",
+    "text": "no on no no no on no",
+    "rating": "3"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 10,
+  "fields": {
+    "publish_date": "2019-11-18T21:49:43.669Z",
+    "product": 13,
+    "name": "\u0421\u043e\u043b\u043e\u0432\u0435\u0439-\u0420\u0430\u0437\u0431\u043e\u0439\u043d\u0438\u043a",
+    "text": "\u0424\u044c\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e\u044e",
+    "rating": "2"
+  }
+},
+{
+  "model": "app_eshop.review",
+  "pk": 11,
+  "fields": {
+    "publish_date": "2019-11-24T10:12:23.857Z",
+    "product": 23,
+    "name": "\u0414\u0436\u044d\u043a \u0414\u044d\u043d\u0438\u0435\u043b\u0441",
+    "text": "\u0423 \u043c\u0430\u0442\u0440\u043e\u0441\u043e\u0432 \u043d\u0435\u0442 \u0432\u043e\u043f\u0440\u043e\u0441\u043e\u0432",
+    "rating": "5"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 1,
+  "fields": {
+    "product": 8,
+    "model": "50 3G",
+    "cpu": "Spreadtrum SC77",
+    "cpu_cores": "4",
+    "ram": "1",
+    "int_flash": "8",
+    "ext_flash_type": "yes",
+    "ext_flash": "64",
+    "cam": "1 - 8Mp",
+    "gsm_ranges": "GSM 900/1800/1900,",
+    "internet": "3G, WAP, EDGE, GPRS, HSPA+",
+    "pay": "no",
+    "display_type": "Color, TN, Touch",
+    "display_size": "5.00",
+    "nav": "GPS",
+    "os": "Android 7.0",
+    "sim_type": "micro SIM",
+    "sim_cards": "2",
+    "accum_capacity": "2000",
+    "body": "Plastic",
+    "color": "Black",
+    "dimensions": "70.9x143.7x9.5 mm",
+    "weight": "160",
+    "description": "ARCHOS"
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 2,
+  "fields": {
+    "product": 14,
+    "model": "Motorola Moto X Style 16GB",
+    "cpu": "Qualcomm MSM899",
+    "cpu_cores": "6",
+    "ram": "3",
+    "int_flash": "16",
+    "ext_flash_type": "yes",
+    "ext_flash": "128",
+    "cam": "1 -21 MP; 2 - 5 MP",
+    "gsm_ranges": "850, 900, 1800, 1900",
+    "internet": "3G, WAP, EDGE, GPRS, HSPA+",
+    "pay": "Google Pay",
+    "display_type": "TFT / 2560x1440 (QHD)",
+    "display_size": "5.70",
+    "nav": "A-GPS",
+    "os": "Android",
+    "sim_type": "nano SIM",
+    "sim_cards": "2",
+    "accum_capacity": "3000",
+    "body": "Plastic",
+    "color": "Black",
+    "dimensions": "76.2x153.9x11.06 mm",
+    "weight": "179",
+    "description": "Hello Moto..."
+  }
+},
+{
+  "model": "app_eshop.phone",
+  "pk": 3,
+  "fields": {
+    "product": 9,
+    "model": "Cat S31",
+    "cpu": "Snapdragon 210",
+    "cpu_cores": "4",
+    "ram": "2",
+    "int_flash": "16",
+    "ext_flash_type": "yes",
+    "ext_flash": "128",
+    "cam": "1 - 8 MP; 2 - 2 MP",
+    "gsm_ranges": "850, 900, 1800, 1900",
+    "internet": "2G/3G/4G(LTE)",
+    "pay": "no",
+    "display_type": "TFT /1280x720 (QHD)",
+    "display_size": "4.70",
+    "nav": "GPS",
+    "os": "Android 7.1",
+    "sim_type": "nano SIM",
+    "sim_cards": "2",
+    "accum_capacity": "4000",
+    "body": "Plastic",
+    "color": "Black",
+    "dimensions": "74.0x146.0x13.0 mm",
+    "weight": "200",
+    "description": "\u0414\u043e\u0431\u0440\u043e\u0442\u043d\u044b\u0439 \u043f\u043e\u0445\u043e\u0434\u043d\u044b\u0439 \u0441\u043c\u0430\u0440\u0442\u0444\u043e\u043d \u0432 \u043f\u044b\u043b\u0435\u0432\u043b\u0430\u0433\u043e\u0437\u0430\u0449\u0438\u0442\u043d\u043e\u043c \u043d\u0430\u0434\u0435\u0436\u043d\u043e\u043c \u043a\u043e\u0440\u043f\u0443\u0441\u0435 \u0438 \u0441 \u0445\u043e\u0440\u043e\u0448\u0435\u0439 \u0430\u0432\u0442\u043e\u043d\u043e\u043c\u043d\u043e\u0441\u0442\u044c\u044e."
+  }
+},
+{
+  "model": "app_eshop.cultural",
+  "pk": 1,
+  "fields": {
+    "product": 22,
+    "symbol": "\u0420\u0443\u0441\u0441\u043a\u0430\u044f \u0438 \u0413\u0435\u0440\u043c\u0430\u043d\u0441\u043a\u044f \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u044b",
+    "rarity": "\u0421\u0421\u0421\u0420 1935 \u0433.",
+    "description": "\u042f \u043f\u043e\u0435\u0434\u0443 \u0432 \u0433\u043e\u0440\u043e\u0434 \u0428\u0443\u044e\r\n\u0418 \u043a\u0443\u043f\u043b\u044e \u0433\u0430\u0440\u043c\u043e\u043d\u044c \u0431\u043e\u043b\u044c\u0448\u0443\u044e,\r\n\u041a\u0430\u043a \u043f\u0440\u0438\u0435\u0434\u0443 \u043d\u0430 \u0441\u0435\u043b\u043e\r\n\u0417\u0430\u0438\u0433\u0440\u0430\u044e \u0432\u0435\u0441\u0435\u043b\u043e."
+  }
+},
+{
+  "model": "app_eshop.cultural",
+  "pk": 2,
+  "fields": {
+    "product": 21,
+    "symbol": "\u0420\u0443\u0441\u0441\u043a\u0430\u044f \u043a\u0443\u043b\u044c\u0442\u0443\u0440\u0430",
+    "rarity": "\u0420\u0430\u0440\u0438\u0442\u0435\u0442",
+    "description": "\u0421\u0430\u043c\u044b\u0439 \u0438\u0437\u0432\u0435\u0441\u0442\u043d\u044b\u0439 \u043d\u0430\u0440\u043e\u0434\u043d\u044b\u0439 \u043c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u044b\u0439 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442"
+  }
+},
+{
+  "model": "app_eshop.miscellaneous",
+  "pk": 1,
+  "fields": {
+    "product": 23,
+    "description": "\u0424\u0443\u0444\u0430\u0439\u043a\u0430 (\u043d\u0438\u0436\u043d\u044f\u044f \u0440\u0443\u0431\u0430\u0448\u043a\u0430) - \u0432 \u043e\u0441\u043d\u043e\u0432\u043d\u043e\u043c \u0442\u0435\u043f\u043b\u043e\u0435 \u043d\u0438\u0436\u043d\u0435\u0435 \u0431\u0435\u043b\u044c\u0435, \u043f\u043e\u043a\u0440\u044b\u0432\u0430\u044e\u0449\u0435\u0435 \u0442\u0443\u043b\u043e\u0432\u0438\u0449\u0435 \u0438 \u0440\u0443\u043a\u0438 (\u044d\u0442\u043e \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0435 \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u0435 \u044d\u0442\u043e\u0433\u043e \u0441\u043b\u043e\u0432\u0430 \u0441\u0430\u043c\u043e\u0435 \u0434\u0440\u0435\u0432\u043d\u0435\u0435, \u0432\u043e\u0441\u0445\u043e\u0434\u0438\u0442 \u043a\u0430\u043a \u043c\u0438\u043d\u0438\u043c\u0443\u043c \u043a XVIII \u0432\u0435\u043a\u0443, \u043d\u0435 \u043f\u043e\u0437\u0434\u043d\u0435\u0435 1765 \u0433\u043e\u0434\u0430)."
+  }
+},
+{
+  "model": "app_eshop.miscellaneous",
+  "pk": 2,
+  "fields": {
+    "product": 24,
+    "description": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f \u043f\u043e\u044f\u0432\u043b\u0435\u043d\u0438\u044f \u0432\u0430\u0442\u043d\u0438\u043a\u0430 \u043d\u0430\u0441\u0447\u0438\u0442\u044b\u0432\u0430\u0435\u0442 \u0443\u0436\u0435 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u043e \u0432\u0435\u043a\u043e\u0432. \u041d\u0430\u043f\u0440\u0438\u043c\u0435\u0440, \u043d\u0435\u0447\u0442\u043e \u043f\u043e\u0434\u043e\u0431\u043d\u043e\u0435 \u0441\u0442\u0435\u0433\u0430\u043d\u043e\u043c\u0443 \u0432\u0430\u0442\u043d\u0438\u043a\u0443 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043e\u0432\u0430\u043b\u043e \u0435\u0449\u0435 \u0432 11 \u0432\u0435\u043a\u0435 \u2013 \u044d\u0442\u043e \u043a\u0430\u0431\u0430\u0434\u0438\u043e\u043d, \u0438\u043b\u0438 \u00ab\u043b\u044c\u043d\u044f\u043d\u043e\u0439 \u043f\u0430\u043d\u0446\u0438\u0440\u044c\u00bb, \u043a\u0443\u0440\u0442\u043a\u0430 \u0438\u0437 \u043c\u043d\u043e\u0436\u0435\u0441\u0442\u0432\u0430 \u043f\u0440\u043e\u0441\u0442\u0435\u0433\u0430\u043d\u043d\u044b\u0445 \u0441\u043b\u043e\u0435\u0432 \u0432\u043e\u0439\u043b\u043e\u043a\u0430 \u0438\u043b\u0438 \u043b\u044c\u043d\u0430."
+  }
+},
+{
+  "model": "app_eshop.miscellaneous",
+  "pk": 3,
+  "fields": {
+    "product": 25,
+    "description": "\u0412\u043e\u0434\u043a\u0430 \u0432 \u0441\u0442\u0430\u043a\u0430\u043d\u0435,\r\n\u0412 \u0431\u043e\u0440\u0449\u0435 \u043a\u0430\u043f\u0443\u0441\u0442\u0430.\r\n\u041f\u043b\u0435\u0434 \u043d\u0430 \u0434\u0438\u0432\u0430\u043d\u0435,\r\n\u041d\u0430 \u0441\u0435\u0440\u0434\u0446\u0435 \u043f\u0443\u0441\u0442\u043e.\r\n..."
+  }
+},
+{
+  "model": "app_eshop.miscellaneous",
+  "pk": 4,
+  "fields": {
+    "product": 20,
+    "description": "\u0411\u043e\u043b\u044c\u0448\u043e\u0439 \u043f\u043e\u0441\u0442\u0435\u0440 300 x 200 (\u0441\u043c)"
+  }
+}
+]
