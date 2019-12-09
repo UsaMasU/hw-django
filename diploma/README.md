@@ -16,7 +16,7 @@
     email: boris@mail.ru
     password: qwe12345
 
-установленне модули в фале: requirements.txt
+установленные модули в фале: requirements.txt
 
 # __________________________________
 
