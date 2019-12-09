@@ -5,17 +5,21 @@
         <div class="col-md-4">
           <h5>{{product.name}}</h5>
           {% if product_url %}
-            <a href="{{product_url}}/{{product.slug}}">
+            <!--a href="/{{product_url}}/{{product.slug}}"-->
+            <a href=".{{product.url}}/{{product.slug}}">
           {% else %}
             <a href="./{{product.slug}}">
           {% endif%}
             <img src="/static/img/{{product.image}}" alt={{product.name}} width="180" height="180">
             </a></a>
-          <form method="post" action="{% url 'phone' product.slug %}">
+          <form method="post" action="/{{product.slug}}/">
             {% csrf_token %}
             <input type="hidden" name="merchandise_id" value="1">
             <input type="hidden" name="description" value="{{detailed.description}}">
-            <input type="submit" class="btn btn-secondary" value="Добавить в корзину »">
+            <input type="submit"
+                   class="btn btn-secondary"
+                   onclick="return confirmation('Отправить товар в корзину?');"
+                   value="Добавить в корзину »">
           </form>
         </div>
 

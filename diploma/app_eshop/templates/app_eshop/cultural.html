@@ -1,9 +1,0 @@
-{% extends "_base.html" %}
-{% load static %}
-
-{% block content %}
-{% include '_menu.html' with active_page="gadgets" %}
-
-    {% include '_product_pages.html' with title="Культурные гаджеты" products=objects %}
-
-{% endblock %}

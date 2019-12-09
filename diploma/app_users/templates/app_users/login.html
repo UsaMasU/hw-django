@@ -1,4 +1,4 @@
-{% extends "_base.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block title %}Авторизация{% endblock %}
@@ -29,10 +29,12 @@
         </form>
 
         {% if message == 'error_login'  %}
-            <p class="alert-danger">Сожалеем, вы неправильно ввели логин или пароль.</p>
+            <p class="alert-danger">Сожалеем, вы неправильно ввели регистрационные данные.</p>
         {% elif message == 'user_disabled' %}
             <p class="alert-danger">Сожалеем, но пользователь заблокирован.</p>
         {% endif %}
+        <br>
+        <a href="/account/register">Регистрация нового пользователя</a>
 
     </div>
 {% endblock %}

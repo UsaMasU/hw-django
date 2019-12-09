@@ -1,4 +1,41 @@
 from django.db import models
+from django.contrib.auth.models import User
+
+
+class Section(models.Model):
+    LOCATION = (
+        ('---', '---'),
+        ('top', 'Top'),
+        ('bottom', 'Bottom'),
+        ('left', 'Left'),
+        ('right', 'Right'),
+        ('section 1', 'Section 1'),
+        ('section 2', 'Section 2'),
+        ('section 3', 'Section 3'),
+        ('section 4', 'Section 4')
+    )
+    TEMPLATE = (
+        ('phone', 'Телефон'),
+        ('cultural', 'Культура'),
+        ('miscellaneous', 'Разный')
+    )
+    name = models.CharField(verbose_name='Name', max_length=30)
+    template_name = models.CharField(max_length=30, choices=TEMPLATE, default='Разный')
+    location = models.CharField(max_length=30, choices=LOCATION, default='---')
+    slug = models.SlugField(max_length=100, default=0)
+
+    def __str__(self):
+        return str(self.name)
+
+
+class Cart(models.Model):
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True, verbose_name='User')
+    price = models.CharField(verbose_name='Price', max_length=10)
+    qty = models.CharField(verbose_name='Quantity', max_length=10)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.user.email + '_' + str(self.id) + '_' + str(self.price)
 
 
 class Product(models.Model):
@@ -8,15 +45,8 @@ class Product(models.Model):
                     ('awaiting delivery', 'Awaiting delivery'),
                     ('discontinued', 'Discontinued')
                     )
-    SECTIONS = (
-        ('---', '---'),
-        ('miscellaneous', 'Miscellaneous'),
-        ('smartphones', 'Smartphones'),
-        ('accessories', 'Accessories'),
-        ('cultural', 'Cultural')
-    )
     id = models.AutoField(verbose_name='ID', primary_key=True)
-    section = models.CharField(max_length=30, choices=SECTIONS, default='---')
+    section = models.ForeignKey(Section, on_delete=models.CASCADE)
     name = models.CharField(verbose_name='Name', max_length=30)
     price = models.CharField(verbose_name='Price', max_length=10)
     qty = models.CharField(verbose_name='Quantity', max_length=10)
@@ -24,6 +54,7 @@ class Product(models.Model):
     release_date = models.DateField(verbose_name='Release date')
     status = models.CharField(max_length=30, choices=STATUS_CHOICE, default='available')
     slug = models.SlugField(max_length=100)
+    cart = models.ManyToManyField(Cart, through='ProductsInCart', verbose_name='Корзина')
 
     def __str__(self):
         return self.name
@@ -31,12 +62,12 @@ class Product(models.Model):
 
 class Review(models.Model):
     RATING_CHOICE = (
-       ('1', '★'),
-       ('2', '★★'),
-       ('3', '★★★'),
-       ('4', '★★★★'),
-       ('5', '★★★★★')
-    )
+                    ('1', '★'),
+                    ('2', '★★'),
+                    ('3', '★★★'),
+                    ('4', '★★★★'),
+                    ('5', '★★★★★')
+                    )
     publish_date = models.DateTimeField(auto_now_add=True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     name = models.CharField(verbose_name='Author\'s name', max_length=30)
@@ -95,11 +126,16 @@ class Miscellaneous(models.Model):
         return str(self.product.name)
 
 
-class Cart(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    price = models.CharField(verbose_name='Price', max_length=10)
-    qty = models.CharField(verbose_name='Quantity', max_length=10)
-    user_id = models.CharField(verbose_name='User id', max_length=255)
+class ProductsInCart(models.Model):
+    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, verbose_name='Корзина')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, verbose_name='Товар')
+    quantity = models.DecimalField(verbose_name='Количество', max_digits=10, decimal_places=0)
+
+    class Meta:
+        verbose_name = 'Товар в корзине'
+        verbose_name_plural = 'Товары в корзине'
 
     def __str__(self):
-        return self.product
+        return '{0}_{1}'.format(self.cart, self.product)
+
+

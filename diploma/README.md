@@ -2,13 +2,19 @@
 ## состав проекта:
 - миграции БД 
 - приложен дамп данных с наполнением `fixtures.json`
-- пользователь:
+- пользователи:
 
     login: admin
-    
     email: admin@admin.org
-    
     password: admin
+
+    login: Ivan
+    email: ivan@mail.ru
+    password: qwe12345
+
+    login: Boris
+    email: boris@mail.ru
+    password: qwe12345
 # __________________________________
 
 # Дипломный проект по курсу «Django: создание функциональных веб-приложений»

@@ -1,11 +1,11 @@
-{% extends "_base.html" %}
+{% extends "base.html" %}
 {% load static %}
 
 {% block content %}
-{% include '_menu.html' with active_page="accessories" %}
+{% include 'menu.html' with active_page="accessories" menu=drop_menu %}
 
 <!-- EMPTY PAGE -->
-{% include '_empty_section.html' %}
+{% include 'empty_section.html' %}
 <!-- EMPTY PAGE -->
 
 {% endblock %}

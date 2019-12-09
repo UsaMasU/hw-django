@@ -1,31 +1,22 @@
-
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout, authenticate
-from django.http import HttpResponseRedirect, HttpResponse
 from .forms import SignUpForm
 from .forms import LoginForm
 
-
-from django.contrib.auth.models import User, Permission
+from django.contrib.auth.models import User
 
 
 def user_login(request):
     if request.method == 'POST':
-
-        users_list = User.objects.filter(email=request.POST['email'])
-        for user in users_list:
-            print(user.email)
+        if len(list(User.objects.filter(email=request.POST['email']))) == 0:
+            return render(request, 'app_users/login.html', {'message': 'error_login'})
 
         form = LoginForm(request.POST)
-
-        print('errors:', form.errors)
-
-        for field in form:
-            print(field.name, field.value())
+        #for field in form:
+        #    print(field.name, field.value())
 
         if form.is_valid():
             cd = form.cleaned_data
-            print(cd)
             user = authenticate(username=cd['username'], password=cd['password'])
             if user is not None:
                 if user.is_active:
@@ -45,7 +36,6 @@ def user_logout(request):
     return redirect('main')
 
 
-# @login_required(login_url="/")
 def user_register(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -59,7 +49,7 @@ def user_register(request):
         username = form.cleaned_data.get('username')
         password = form.cleaned_data.get('password1')
         login(request, authenticate(username=username, password=password))
-        return redirect('home')
+        return redirect('main')
     else:
         form = SignUpForm()
-    return render(request, 'signup.html', {'form': form})
+    return render(request, 'app_users/register.html', {'form': form})

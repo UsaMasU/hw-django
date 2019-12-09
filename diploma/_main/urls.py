@@ -23,21 +23,20 @@ from django.urls import include
 from app_eshop.views import main, accessories, gadgets, product, cart
 from app_users.views import user_login, user_logout, user_register
 
+
 urlpatterns = [
     path('', main),
     path('index/', main, name='main'),
-    path('smartphones/', gadgets, name='smartphones'),
-    path('cultural/', gadgets, name='cultural'),
-    path('miscellaneous/', gadgets, name='miscellaneous'),
     path('accessories/', accessories, name='accessories'),
     path('cart/', cart, name='cart'),
-    url(r'smartphones/(?P<slug>[\w-]+)/$', product, name='phone'),
-    url(r'cultural/(?P<slug>[\w-]+)/$', product, name='cult'),
-    url(r'miscellaneous/(?P<slug>[\w-]+)/$', product, name='misc'),
+    path('admin/', admin.site.urls),
+
     url(r'^account/register/$', user_register, name='user_register'),
     url(r'^account/login/$', user_login, name='user_login'),
     url(r'^account/logout/$', user_logout, name='user_logout'),
-    path('admin/', admin.site.urls)
+
+    url(r'section/(?P<slug>[\w-]+)/$', gadgets, name='index'),
+    url(r'(?P<slug>[\w-]+)/$', product, name='product')
 ]
 
 

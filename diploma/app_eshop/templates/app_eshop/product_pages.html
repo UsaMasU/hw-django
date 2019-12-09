@@ -31,7 +31,7 @@
         <br>
         <div class="row">
           {% for product_show in products %}
-            {% include 'app_eshop/product_snippet.html' with product=product_show %}
+            {% include 'app_eshop/product_snippet.html' with product=product_show product_url=product_show.section %}
           {%endfor%}
         </div>
     </div>
