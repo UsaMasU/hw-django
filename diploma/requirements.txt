@@ -7,7 +7,7 @@ chardet==3.0.4
 colorama==0.3.7
 cycler==0.10.0
 decorator==4.3.0
-Django==2.0.5
+Django==2.2.13
 django-appconf==1.0.3
 django-ckeditor==5.7.1
 django-debug-toolbar==2.0
