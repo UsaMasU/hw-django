@@ -60,7 +60,7 @@ python-dateutil==2.7.3
 python-slugify==3.0.3
 python-whois==0.6.8
 pytz==2018.5
-pywin32==223
+pywin32==301
 pywinpty==0.5.2
 pyzmq==17.0.0
 query-string==2018.11.20
